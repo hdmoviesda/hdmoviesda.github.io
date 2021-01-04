@@ -10,17 +10,17 @@
       <div>
         <div class="ava">
           <picture>
-            <source srcset="https://masstamilan.io/wp/kutty-2012.webp" type="image/webp">
-            <source srcset="https://masstamilan.io/img/kutty-2012.jpg" type="image/jpeg">
-            <img alt="{{ post.title }} movie poster" title="{{ post.title }} Movie Poster" src="https://masstamilan.io/img/kutty-2012.jpg" loading="lazy">
+            <source srcset="{{ post.image }}">
+            <source srcset="{{ post.image }}">
+            <img alt="{{ post.title }} movie poster" title="{{ post.title }} Movie Poster" src="{{ post.image }}" loading="lazy">
           </picture>
         </div>
         <div class="info">
           <h1>{{ post.title }}</h1>
           <p class="description">
-            <b>Starring:</b> Dhanush, Shriya Saran<br>
-            <b>Music:</b> Devi Sri Prasad<br>
-            <b>Director:</b> Mithran R Jawahar
+            <b>Language:</b> {{ page.language }}<br>
+            <b>Size:</b> {{ page.size }}<br>
+            <b>Year:</b> {{ page.year }}
           </p>
         </div>
       </div>
