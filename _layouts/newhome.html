@@ -58,5 +58,13 @@
   <p class="cen">
   <a onclick="sT()" class="pointer">Switch theme</a> — With ♥ from {{site.name}} Team - {{ 'now' | date: "%Y" }}.
 </p>
+  <script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'UA-64548692-3');
+  const sT=()=>{-1==document.cookie.indexOf("t=dark")?-1!=document.cookie.indexOf("t=light")&&(document.cookie="t=dark;path=/",document.body.className="dark"):(document.cookie="t=light;path=/",document.body.className="light")};
+  navigator.serviceWorker.getRegistrations().then(function(e){for(let r of e)r.unregister()});
+</script>
 </body>
 </html>
