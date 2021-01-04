@@ -51,7 +51,7 @@ collections:
         hint: "Separate with commas."
         widget: "list"
       - label: "Actors"
-        name: "genre"
+        name: "genre1"
         hint: "Separate with commas."
         widget: "list"
       - label: "Download Link"
