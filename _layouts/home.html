@@ -99,6 +99,9 @@ layout: main
     {% if site.paginate %}
         {% include pagination-home.html %}
     {% endif %}
+	{% for category in site.categories %}
+        <li><a href="{{ category.url }}"><strong>{{ category.title }}</strong></a></li>
+{% endfor %}
 </main>
 
 {% assign social_urls = '' %}
