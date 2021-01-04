@@ -52,19 +52,64 @@
     </nav>
   </div>
 </div>
-  
-  
-  
-  <p class="cen">
-  <a onclick="sT()" class="pointer">Switch theme</a> — With ♥ from {{site.name}} Team - {{ 'now' | date: "%Y" }}.
+  <p class="cen mhigh mb-1">
+  <a href="https://telegram.me/isaiminidownload" target="_blank" rel="nofollow">Click here to join us on Telegram</a>
 </p>
-  <script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'UA-64548692-3');
-  const sT=()=>{-1==document.cookie.indexOf("t=dark")?-1!=document.cookie.indexOf("t=light")&&(document.cookie="t=dark;path=/",document.body.className="dark"):(document.cookie="t=light;path=/",document.body.className="light")};
-  navigator.serviceWorker.getRegistrations().then(function(e){for(let r of e)r.unregister()});
-</script>
+  
+  <div class="box cen">
+<section class="bots ib">
+  
+  
+  <div class="home-page">
+  <h2 class="left pad10">Recent Updates</h2>
+    <div class="botlist">
+      
+{% for post in paginator.posts %}
+      <div class="botitem">
+        <a href="/parris-jeyaraj-songs" rel="bookmark" title="Parris Jeyaraj Songs Download">
+          <div>
+            <div class="ava">
+              <picture>
+                <source srcset="/wp/parris-jeyaraj-tamil-2021.webp" type="image/webp">
+                <source srcset="/img/parris-jeyaraj-tamil-2021.jpg" type="image/jpeg">
+                <img alt="Parris Jeyaraj movie poster" title="Parris Jeyaraj Movie Poster" src="/img/parris-jeyaraj-tamil-2021.jpg" loading="lazy">
+              </picture>
+            </div>
+            <div class="info">
+              <h1>Parris Jeyaraj</h1>
+              <p class="description">
+                <b>Starring:</b> Santhanam, Anika Soti<br>
+                <b>Music:</b> Santhosh Narayanan<br>
+                <b>Director:</b> Johnson
+              </p>
+            </div>
+          </div>
+        </a>
+      </div>
+      {% endfor %}  
+{% include pagination-home.html %}
+</div>
+</div>
+</section>
+<section class="sbar ib cen">
+  <div id="sidebar" class="cen">
+    <section class="wid ctr">
+      <h4 class="wtitle cen">Follow us</h4>
+      <div class="social-icons cen">
+        <div class="s-icon telegram">
+          <a href="https://telegram.me/isaiminidownload" target="_blank" rel="nofollow">
+          <svg xmlns="http://www.w3.org/2000/svg" height="75" width="75" viewBox="0 0 512 512"><rect width="512" height="512" rx="15%" fill="#37aee2"></rect><path fill="#c8daea" d="M199 404c-11 0-10-4-13-14l-32-105 245-144"></path><path fill="#a9c9dd" d="M199 404c7 0 11-4 16-8l45-43-56-34"></path><path fill="#f6fbfe" d="M204 319l135 99c14 9 26 4 30-14l55-258c5-22-9-32-24-25L79 245c-21 8-21 21-4 26l83 26 190-121c9-5 17-3 11 4"></path></svg>
+          </a>
+        </div>
+      </div>
+    </section>
+</div>
+</section>
+  </div>
+  
+  
+<p class="cen">
+With ♥ from {{site.name}} Team - {{ 'now' | date: "%Y" }}.
+</p>
 </body>
 </html>
