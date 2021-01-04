@@ -1,24 +1,58 @@
 # Site Settings
 name: Starisai
-title: Starisai | Download and Watch Latest Tamil, Telugu, Malayalam, Hindi Movies at High Quality.
-description: Download and Watch Latest Tamil, Telugu, Malayalam, Hindi Movies at High Quality. Tamil Latest Movies and Tamil Dubbed Movies Free Download in HD Online Watching Free Tentrockers.
+title: Starisai | Download and Watch Latest Tamil, Telugu, Malayalam, Hindi
+  Movies at High Quality.
+description: Download and Watch Latest Tamil, Telugu, Malayalam, Hindi Movies at
+  High Quality. Tamil Latest Movies and Tamil Dubbed Movies Free Download in HD
+  Online Watching Free Tentrockers
 tags:
-  - blog
-  - template
-  - jekyll
-  - theme
-  - netlify
-show_hero: true
+  - isaimini
+  - moviesda
+  - movies
+  - tamilrockers
+  - hindi
+  - telugu
+  - malaylam
+  - hollywood
+  - bollywood
+  - torrent
+  - 720p
+  - 1gb
+  - 400mb
+  - serials
+  - series
+  - cricket
+  - online
+  - movierulz
+  - 123movies
+  - isaidub
+  - kuttymovies
+  - kuttyrockers
+  - srirockers
+  - wetransfer
+  - dubbed
+  - telegram
+  - tamilkit
+  - movieskit
+  - proxy
+show_hero: false
+paginate: 60
 menu:
   - title: Home
     url: /
-  - title: About
-    url: /about
-  - title: Contact
-    url: /contact
-  - title: Feed
-    url: /feed.xml
-email: youremail@test.com
+  - url: /category/Tamil/
+    title: Tamil Movies
+  - title: Telugu Movies
+    url: /category/Telugu/
+  - url: /category/Hindi/
+    title: Hindi Movies
+  - title: English Movies
+    url: /category/Hollywood/
+  - url: /category/Series/
+    title: Web Series
+  - title: Telegram
+    url: tg://resolve/?domain=isaiminidownload
+email: ""
 disqus_username: disqus_username
 
 
@@ -33,20 +67,34 @@ medium_username: medium_username
 
 
 # Posts Settings
-show_time_bar: true
+show_time_bar: false
 show_modal_on_exit: false
-show_modal_on_finish_post: true
+show_modal_on_finish_post: false
 two_columns_layout: true
 
 
 # Advanced Settings
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://starisai.github.io" # the base hostname & protocol for your site
-google_analytics: "UA-XXXXXXXX-X"
+url: "https://www.isaiminiweb.online" # the base hostname & protocol for your site
+google_analytics: "UA-179466109-1"
 language: "en"
 categories_folder: category
 sent_message_url: "/contact/message-sent/"
 
+
+# Proxies
+proxy0: "https://tamilmv.isaimini.live" # the base hostname & protocol for your sit
+proxy1: "https://movies.isaimini.live" # the base hostname & protocol for your site
+proxy2: "https://moviesda.isaimini.live" # the base hostname & protocol for your site
+proxy3: "https://tamilyogi.isaimini.live" # the base hostname & protocol for your site
+proxy4: "https://tamilyogi.isaiminiweb.online"
+proxy5: "https://tamilmv.isaiminiweb.online"
+proxy6: "https://moviesda.isaiminiweb.online"
+proxy7: "https://movies.isaiminiweb.online"
+proxy8: "https://tamilgun.isaiminiweb.online"
+proxy9: "https://tamilrockers.isaiminiweb.online"
+proxy10: "https://www.isaiminiweb.online"
+proxy11: "https://download.isaiminiweb.online"
 
 # Build settings
 markdown: kramdown
@@ -56,7 +104,7 @@ collections:
   authors:
     output: true
 paginate_path: "/page/:num/"
-show_get_theme_btn: true
+show_get_theme_btn: false
 use_logo: false
 
 # Content paginator
@@ -65,6 +113,7 @@ paginate_content:
   debug: false
   collections:
     - posts
+    - teluguda
   auto: false
   separator: "--page-break--"
   permalink: "/:num/"
@@ -85,6 +134,8 @@ sass:
 plugins:
   - jekyll-paginate
   - jekyll-paginate-content
+  - jekyll-feed
+  - jekyll-sitemap 
 
 # Exclude my node related stuff
 exclude: [
@@ -101,3 +152,6 @@ exclude: [
 
 # Theme
 version: v3.1.0
+
+feed:
+  posts_limit: 2000
