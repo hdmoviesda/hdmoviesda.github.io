@@ -4,6 +4,31 @@
 
 <div style=" text-transform: capitalize;" class="f"><font color="red">[{{ post.layout }}]</font> <b  >{{ post.title }}</b> <a href="{{ BASE_PATH }}{{ post.url }}"> <span  style="color: green;">Download Now</span></a></div>
 
+           
+           
+           
+           <div class="botitem">
+    <a href="{{ BASE_PATH }}{{ post.url }}" rel="bookmark" title="{{ post.title }} Movie Download">
+      <div>
+        <div class="ava">
+          <picture>
+            <source srcset="https://masstamilan.io/wp/kutty-2012.webp" type="image/webp">
+            <source srcset="https://masstamilan.io/img/kutty-2012.jpg" type="image/jpeg">
+            <img alt="{{ post.title }} movie poster" title="{{ post.title }} Movie Poster" src="https://masstamilan.io/img/kutty-2012.jpg" loading="lazy">
+          </picture>
+        </div>
+        <div class="info">
+          <h1>{{ post.title }}</h1>
+          <p class="description">
+            <b>Starring:</b> Dhanush, Shriya Saran<br>
+            <b>Music:</b> Devi Sri Prasad<br>
+            <b>Director:</b> Mithran R Jawahar
+          </p>
+        </div>
+      </div>
+    </a>
+  </div>
+           
 
 {% endfor %}  
 {% include pagination-home.html %}
