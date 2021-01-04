@@ -22,7 +22,7 @@ collections:
         widget: "string"
       - label: "Slug"
         name: "slug"
-        widget: "hidden"
+        widget: "string"
       - label: "Description"
         name: "description"
         widget: "string"
