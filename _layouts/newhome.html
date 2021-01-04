@@ -64,30 +64,17 @@
   <h2 class="left pad10">Recent Updates</h2>
     <div class="botlist">
       
+<div>
+
 {% for post in paginator.posts %}
-      <div class="botitem">
-        <a href="/parris-jeyaraj-songs" rel="bookmark" title="Parris Jeyaraj Songs Download">
-          <div>
-            <div class="ava">
-              <picture>
-                <source srcset="/wp/parris-jeyaraj-tamil-2021.webp" type="image/webp">
-                <source srcset="/img/parris-jeyaraj-tamil-2021.jpg" type="image/jpeg">
-                <img alt="Parris Jeyaraj movie poster" title="Parris Jeyaraj Movie Poster" src="/img/parris-jeyaraj-tamil-2021.jpg" loading="lazy">
-              </picture>
-            </div>
-            <div class="info">
-              <h1>Parris Jeyaraj</h1>
-              <p class="description">
-                <b>Starring:</b> Santhanam, Anika Soti<br>
-                <b>Music:</b> Santhosh Narayanan<br>
-                <b>Director:</b> Johnson
-              </p>
-            </div>
-          </div>
-        </a>
-      </div>
-      {% endfor %}  
+
+<div style=" text-transform: capitalize;" class="f"><font color="red">[{{ post.layout }}]</font> <b  >{{ post.title }}</b> <a href="{{ BASE_PATH }}{{ post.url }}"> <span  style="color: green;">Download Now</span></a></div>
+
+
+{% endfor %}  
 {% include pagination-home.html %}
+           </div>
+      
 </div>
 </div>
 </section>
