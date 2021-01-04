@@ -31,7 +31,7 @@
 <body class="light">
   <div class="header">
   <div class="box">
-    <a href="/" title="MassTamilan" class="logo mt-io logo14">MassTamilan</a>
+    <a href="/" title="{{site.name}}" class="logo mt-io logo14">{{site.name}}</a>
     <form method="get" action="/search">
       <input type="text" placeholder="Search..." name="keyword" value="">
       <button class="icon"><i class="icon-search"></i></button>
@@ -52,5 +52,11 @@
     </nav>
   </div>
 </div>
+  
+  
+  
+  <p class="cen">
+  <a onclick="sT()" class="pointer">Switch theme</a> — With ♥ from {{site.name}} Team - {{ 'now' | date: "%Y" }}.
+</p>
 </body>
 </html>
