@@ -166,6 +166,23 @@
         </div>
       </div>
     </section>
+  <section class="wid ctr left">
+    <h4 class="wtitle cen">Trending Downloads</h4>
+    <ul>
+        
+        
+        
+        
+        {% for category in site.categories %}
+    <li><a href="{{category.url}}">{{category|first}}</a></li>
+{% endfor %}
+        
+        
+        
+        
+        
+    </ul>
+  </section>
     
   
 </div>
