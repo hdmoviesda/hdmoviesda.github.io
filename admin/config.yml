@@ -47,11 +47,11 @@ collections:
         valueField: "slug"
         displayFields: ["title"]
       - label: "Genre"
-        name: "genre"
+        name: "tags"
         hint: "Separate with commas."
         widget: "list"
       - label: "Actors"
-        name: "genre1"
+        name: "tags"
         hint: "Separate with commas."
         widget: "list"
       - label: "Download Link"
