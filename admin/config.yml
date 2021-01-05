@@ -46,11 +46,7 @@ collections:
         searchFields: ["title"]
         valueField: "slug"
         displayFields: ["title"]
-      - label: "Genre"
-        name: "tags"
-        hint: "Separate with commas."
-        widget: "list"
-      - label: "Actors"
+      - label: "Keywords"
         name: "tags"
         hint: "Separate with commas."
         widget: "list"
@@ -64,6 +60,10 @@ collections:
                 widget: "string"
                 default: "Download Server 1"
                 hint: "Text that will show up in the menu"
+              - label: "Quality"
+                name: "quality"
+                widget: "string"
+                default: "HDRip"
               - label: "URL"
                 name: "url"
                 widget: "string"
