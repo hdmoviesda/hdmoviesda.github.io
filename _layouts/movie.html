@@ -78,6 +78,7 @@
       <b>Language:</b> {{ page.language }}<br>
       <b>Size:</b> {{ page.size }}<br>
       <b>Year:</b> {{ page.year }}<br>
+      <b>Updated:</b> {{ page.date }}<br>
     </fieldset>
     <div class="rating cen">
       <p>Show your support:
@@ -116,8 +117,8 @@
     {% if item.title and item.url %}
           
        <tr>
-            <td><span><h2 class="nostyle"><span ><link href="{{item.url}}"> <a href="{{item.url}}" title="Download {{page.seotitle}} movie HD">{{item.title}}</a> </span></h2>
-                <br><b>Quality: </b><span>{{page.quality}}</span> <br><b>Size: </b><span class="dl-count">{{page.size}}</span> </span>
+            <td><span><h2 class="nostyle"><span><link href="{{item.url}}"> <a href="{{item.url}}" title="Download {{page.seotitle}} movie HD">{{item.title}}</a> </span></h2>
+                <br><b>Quality: </b><span>{{page.quality}}</span> </span>
             </td>
             
         </tr>     
