@@ -33,7 +33,7 @@
 <link rel="shortcut icon" href="/favicon.ico">
 <link href="{{ url }}" rel="canonical" />
 </head>
-<body class="dark">
+<body class="white">
   <div class="header">
   <div class="box">
     <a href="/" title="{{site.name}}" class="logo mt-io logo14">{{site.name}}</a>
@@ -89,14 +89,10 @@
     </fieldset>
     <div class="rating cen">
       <p>Show your support:
-          <button id="like" class="btn green">
-            <i class="icon-thumbs-up"></i> <span class="action-text">Like</span>
-            (<span id="lcnt" class="likes">328</span>)
-          </button>
-          <button id="dlike" class="btn red">
-            <i class="icon-thumbs-down"></i> <span class="action-text">Dislike</span>
-            (<span id="dcnt" class="dlikes">135</span>)
-          </button>
+<!-- LikeBtn.com BEGIN -->
+<span class="likebtn-wrapper" data-theme="padded" data-ef_voting="push" data-white_label="true" data-show_dislike_label="true" data-voting_cancelable="false" data-counter_clickable="true" data-counter_frmt="km" data-popup_disabled="true" data-popup_dislike="true" data-share_enabled="false" data-loader_image="https://likebtn.com/i/loader-small.gif?v=39" data-tooltip_enabled="false"></span>
+<script>(function(d,e,s){if(d.getElementById("likebtn_wjs"))return;a=d.createElement(e);m=d.getElementsByTagName(e)[0];a.async=1;a.id="likebtn_wjs";a.src=s;m.parentNode.insertBefore(a, m)})(document,"script","//w.likebtn.com/js/w/widget.js");</script>
+<!-- LikeBtn.com END -->
       </p>
     </div>
     <div class="cen">
