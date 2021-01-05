@@ -1,6 +1,12 @@
 <!DOCTYPE html>
 <html>
 <head>
+   {% assign url = '' %}
+    {% if paginator.page_trail %}
+        {% assign url = paginator.first_page_path | replace:'index.html','' | prepend: site.baseurl | prepend: site.url %}
+    {% else %}
+        {% assign url = page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url %}
+    {% endif %}
 <title>{{page.title}}</title>
 <meta name="description" content="{{page.seotitle}} ({{page.year}}) Tamilrockers Download {{page.seotitle}} ({{page.year}}) Tamil Movie TamilRockers Download TamilRockers {{page.seotitle}} ({{page.year}}) Download ({{page.year}}) Mp4 Download Tamilrockers.Net">
 <meta name="keywords" content="isaimini, moviesda, kothamovies, jiorockers, tamilrockers, tamilmv, tamilblasters, tamilvaathi, tamilgun, tamilyogi, isaitamil, playtamil, masstamilan, starmusic, hotstar, disney">
@@ -78,6 +84,7 @@
       <b>Language:</b> {{ page.language }}<br>
       <b>Size:</b> {{ page.size }}<br>
       <b>Year:</b> {{ page.year }}<br>
+      <b>Quality:</b> {{ page.quality }}<br>
       <b>Updated:</b> {{ page.date }}<br>
     </fieldset>
     <div class="rating cen">
