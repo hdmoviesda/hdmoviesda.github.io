@@ -10,8 +10,10 @@ size: 3.4GB
 category: tamil-2021-movies
 genre:
   - Action
+  - Drama
 genre1:
   - Madhavan
+  - Dhanush
 dlinks:
   - title: Download Server 1
     url: https://adoring-meitner-913e54.netlify.app/admin/#/collections/movies/new
