@@ -13,6 +13,7 @@ title: Maara Movie Download HD Tamilrockers
 seotitle: Maara
 language: Tamil
 year: "2021"
+quality: HD
 category: tamil-2021-movies
 tags:
   - Madhavan
