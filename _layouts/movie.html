@@ -93,17 +93,41 @@
     </div>
     <div class="cen">
     </div>
-        <h2 class="ziparea normal">
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+        <div class="ziparea normal">
           <span class="bold uline">Download {{ page.seotitle }} movie download HD Tamilrockers</span><br>
-          
+          <table id="tlist" class="firstleft">
+    <tbody content="1">
+        <tr>
+            <th id="track">Title</th>
+            <th id="play">Download</th>
+        </tr>
     {% for item in page.dlinks %}
     {% if item.title and item.url %}
           
-            <a class="dlink anim" href="{{ item.url }}" rel="nofollow" >{{ item.title }} ({{page.size}})</a>
+       <tr>
+            <td><span><h2 class="nostyle"><span ><link href="{{item.url}}"> <a href="{{item.url}}" title="Download {{page.seotitle}} movie HD">{{item.title}}</a> </span></h2>
+                <br><b>Quality: </b><span>{{page.quality}}</span> <br><b>Size: </b><span class="dl-count">{{page.size}}</span> </span>
+            </td>
+            
+        </tr>     
               
   {% endif %}
   {% endfor %}
-        </h2>
+              </tr>
+    </tbody>
+</table>
+        </div>
       
       
 
