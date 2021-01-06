@@ -191,11 +191,13 @@
         <h1 class="wtitle cen em1">Tags</h1>
    
         <div class="tags">
+           <ul>
                                             {% for tag in page.tags %}
                                                 {% if tag != "" %}
-                                                    <a href="{{ site.baseurl}}/tags/#{{tag | slugify }}">{{ tag }}</a>
+                                                   <li> <a href="{{ site.baseurl}}/tags/#{{tag | slugify }}">{{ tag }}</a></li>
                                                 {% endif %}
                                             {% endfor %}
+              </ul>
                                         </div>
       </section>
 
