@@ -14,7 +14,7 @@ seotitle: Tharam
 language: Tamil
 year: "2021"
 quality: HD
-category: Tamil HD Movies
+category: Tamil Dubbed Movies
 tags:
   - Madhavan
   - Vijay
