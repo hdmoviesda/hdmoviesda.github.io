@@ -87,13 +87,7 @@
       <b>Quality:</b> {{ page.quality }}<br>
       <b>Updated:</b> {{ page.date }}<br>
     </fieldset>
-      <div class="tags">
-                                            {% for tag in page.tags %}
-                                                {% if tag != "" %}
-                                                    <a href="{{ site.baseurl}}/tags/#{{tag | slugify }}">#{{ tag }}</a>
-                                                {% endif %}
-                                            {% endfor %}
-                                        </div>
+      
     <div class="rating cen">
       <p>
 <!-- LikeBtn.com BEGIN -->
@@ -193,7 +187,17 @@
       
   </article>
 </div>
-
+<section class="ctr wid">
+        <h1 class="wtitle cen em1">Tags</h1>
+   
+        <div class="tags">
+                                            {% for tag in page.tags %}
+                                                {% if tag != "" %}
+                                                    <a href="{{ site.baseurl}}/tags/#{{tag | slugify }}">{{ tag }}</a>
+                                                {% endif %}
+                                            {% endfor %}
+                                        </div>
+      </section>
 
 
 
