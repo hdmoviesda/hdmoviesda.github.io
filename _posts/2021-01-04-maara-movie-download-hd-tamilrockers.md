@@ -14,7 +14,7 @@ seotitle: Maara
 language: Tamil
 year: "2021"
 quality: HD
-category: tamil-2021-movies
+category: Tamil HD Movies
 tags:
   - Madhavan
   - Vijay
