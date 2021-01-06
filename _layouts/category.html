@@ -1,71 +1,163 @@
 <!DOCTYPE html>
-<html lang="{{ site.language }}" class="no-js">
-    {% include head.html %}
-    <body class="main-page has-push-menu">
-        {% include svg-icons.html %}
-        {% include header.html %}
-        <section class="content">
-            <main class="home" id="post" role="main">
-                <h1 class="title-category">/{{page.title}}</h1>
-                <div id="grid" class="row flex-grid">
-                    {% assign posts = site.posts | where_exp:"post","post.is_generated != true" %}
+<html>
+<head>
+      {% assign url = '' %}
+    {% if paginator.page_trail %}
+        {% assign url = paginator.first_page_path | replace:'index.html','' | prepend: site.baseurl | prepend: site.url %}
+    {% else %}
+        {% assign url = page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url %}
+    {% endif %}
+<title>{{page.title}}</title>
+<meta name="description" content="{{page.description}}">
+<meta name="keywords" content="isaimini, moviesda, kothamovies, jiorockers, tamilrockers, tamilmv, tamilblasters, tamilvaathi, tamilgun, tamilyogi, isaitamil, playtamil, masstamilan, starmusic, hotstar, disney">
+<meta property="og:site_name" content="{{site.name}}">
+<meta property="og:title" content="{{page.title}}">
+<meta property="og:description" content="{{page.description}}">
+<meta property="og:url" content="{{url}}">
+<meta property="og:image" content="/assets/img/blog-image.png">
+<meta charset="UTF-8" />
+<meta name="google" content="notranslate" />
+<meta http-equiv="Content-Language" content="en_US" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="index,follow">
+<meta name="Rating" content="General">
+<meta name="audience" content="all">
+<meta name="theme-color" content="#0085ef">
+<meta name="msapplication-TileColor" content="#0085ef">
+<meta name="mobile-web-app-capable" content="yes">
+<meta itemprop="isFamilyFriendly" content="true">
+<meta itemprop="copyrightYear" content="{{ 'now' | date: "%Y" }}">
+<link rel="stylesheet" media="all" href="/assets/css/mass.css" />  
+<link rel="alternate" type="application/rss+xml" title="{{site.name}} RSS Feed" href="/feed.xml">
+<link rel="shortcut icon" href="/favicon.ico">
+<link href="{{url}}" rel="canonical" />
+</head>
+<body class="light">
+  <div class="header">
+  <div class="box">
+    <a href="/" title="{{site.name}}" class="logo mt-io logo14">{{site.name}}</a>
+    <form method="get" action="/search">
+      <input type="text" placeholder="Search..." name="keyword" value="">
+      <button class="icon"><i class="icon-search"></i></button>
+    </form>
+    <nav class="site-nav">
+      <a href="#" style="display:none" class="menu-icon">
+        <svg viewBox="0 0 18 15">
+          <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.031C17.335,0,18,0.665,18,1.484L18,1.484z"></path>
+          <path d="M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0c0-0.82,0.665-1.484,1.484-1.484 h15.031C17.335,6.031,18,6.696,18,7.516L18,7.516z"></path>
+          <path d="M18,13.516C18,14.335,17.335,15,16.516,15H1.484C0.665,15,0,14.335,0,13.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.031C17.335,12.031,18,12.696,18,13.516L18,13.516z"></path>
+        </svg>
+      </a>
+      <div class="trigger">
+        <a class="page-link anim slink" href="/search" rel="bookmark" style="display:none">Search</a>
+        <a class="page-link anim" href="/latest-updates" rel="bookmark">Latest Updates</a>
+        <a class="page-link anim" href="/movie-index" rel="bookmark">Movie Index</a>
+      </div>
+    </nav>
+  </div>
+</div>
+
+  
+  <div class="box cen">
+<section class="bots ib">
+  
+  
+  <div class="home-page">
+  
+                          {% assign posts = site.posts | where_exp:"post","post.is_generated != true" %}
                     {% for post in posts %}
                         {% if post.category == page.slug %}
-                            <article class="box-item">
-                                <div class="box-body">
-                                    {% if post.image %}
-                                        <a class="cover" href="{{ post.url | prepend: site.baseurl }}">
-                                            {% include loader.html %}
-                                            {% if post.optimized_image %}
-                                                <img src="/assets/img/placeholder.png" width="100%" data-url="{{ post.optimized_image }}" class="preload">
-                                                <noscript>
-                                                    <img src="{{ post.optimized_image }}" width="100%">
-                                                </noscript>
-                                            {% elsif post.image %}
-                                                <img src="/assets/img/placeholder.png" width="100%" data-url="{{ post.image }}" class="preload">
-                                                <noscript>
-                                                    <img src="{{ post.image }}" width="100%">
-                                                </noscript>
-                                            {% else %}
-                                                <img src="/assets/img/placeholder.png" width="100%" data-url="/assets/img/off.jpg" class="preload">
-                                                <noscript>
-                                                    <img src="/assets/img/off.jpg" width="100%">
-                                                </noscript>
-                                            {% endif %}
-                                            {% include new-post-tag.html date=post.date %}
-                                            {% include read-icon.html %}
-                                        </a>
-                                    {% endif %}
-                                    <div class="box-info">
-                                        <time datetime="{{ post.date | date_to_xmlschema }}" class="date">
-                                            {% include date.html date=post.date %}
-                                        </time>
-                                        <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">
-                                            <h2 class="post-title">
-                                                {{ post.title }}
-                                            </h2>
-                                        </a>
-                                        <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">
-                                            <p class="description">{{ post.description }}</p>
-                                        </a>
-                                        <div class="tags">
-                                            {% for tag in post.tags %}
-                                                {% if tag != "" %}
-                                                    <a href="{{ site.baseurl}}/tags/#{{tag | slugify }}">#{{ tag }}</a>
-                                                {% endif %}
-                                            {% endfor %}
-                                        </div>
-                                    </div>
-                                </div>
-                            </article>
-                        {% endif %}
+
+
+        <div class="botitem">
+    <a href="{{ BASE_PATH }}{{ post.url }}" rel="bookmark" title="{{ post.title }} Movie Download">
+      <div>
+        <div class="ava">
+          <picture>
+            <source srcset="{{ post.image }}">
+            <source srcset="{{ post.image }}">
+            <img alt="{{ post.title }} movie poster" title="{{ post.title }} Movie Poster" src="{{ post.image }}" loading="lazy">
+          </picture>
+        </div>
+        <div class="info">
+          <h1>{{ post.seotitle }}</h1>
+          <p class="description">
+            <b>Language:</b> {{ post.language }}<br>
+            <b>Size:</b> {{ post.size }}<br>
+            <b>Quality:</b> {{ post.quality }}<br>
+            <b>Year:</b> {{ post.year }}
+          </p>
+        </div>
+      </div>
+    </a>
+  </div>
+      
+      
+      
+
+         {% endif %}
                     {% endfor %}
-                </div>
-            </main>
-        </section>
-        {% include footer.html %}
-    </body>
+
+    
+</div>
+</section>
+<section class="sbar ib cen">
+  <div id="sidebar" class="cen">
+    <section class="wid ctr">
+      <h4 class="wtitle cen">Follow us</h4>
+      <div class="social-icons cen">
+        <div class="s-icon telegram">
+          <a href="https://telegram.me/isaiminidownload" target="_blank" rel="nofollow">
+          <svg xmlns="http://www.w3.org/2000/svg" height="75" width="75" viewBox="0 0 512 512"><rect width="512" height="512" rx="15%" fill="#37aee2"></rect><path fill="#c8daea" d="M199 404c-11 0-10-4-13-14l-32-105 245-144"></path><path fill="#a9c9dd" d="M199 404c7 0 11-4 16-8l45-43-56-34"></path><path fill="#f6fbfe" d="M204 319l135 99c14 9 26 4 30-14l55-258c5-22-9-32-24-25L79 245c-21 8-21 21-4 26l83 26 190-121c9-5 17-3 11 4"></path></svg>
+          </a>
+        </div>
+      </div>
+    </section>
+      
+    <section class="wid ctr left">
+    <h4 class="wtitle cen">Recent Updates</h4>
+    <ul>
+
+        
+        
+        
+{% for post in site.posts limit:15 %}  
+  <li><a href="{{ BASE_PATH }}{{ post.url }}">{{ post.seotitle }}</a></li>  
+{% endfor %}  
+        
+        
+        
+        
+        
+    </ul>
+      
+  </section>
+    
+    <section class="wid ctr left">
+    <h4 class="wtitle cen">Categories</h4>
+          <ul>
+{% assign categories_list = site.categories %}
+  {% if categories_list.first[0] == null %}
+    {% for category in categories_list %}
+      <li><a href="{{site.url}}/category/{{ category | downcase | downcase | url_escape | strip | replace: ' ', '-' }}">{{ category | camelcase }} ({{ site.tags[category].size }})</a></li>
+    {% endfor %}
+  {% else %}
+    {% for category in categories_list %}
+      <li><a href="{{site.url}}/category/{{ category[0] | downcase | url_escape | strip | replace: ' ', '-' }}">{{ category[0] | camelcase }} ({{ category[1].size }})</a></li>
+    {% endfor %}
+  {% endif %}
+{% assign categories_list = nil %}
+</ul>
+         </section>
+    
+</div>
+</section>
+  </div>
+  
+  
+<p class="cen">
+With ♥ from {{site.name}} Team - {{ 'now' | date: "%Y" }}.
+</p>
+</body>
 </html>
-
-
-
