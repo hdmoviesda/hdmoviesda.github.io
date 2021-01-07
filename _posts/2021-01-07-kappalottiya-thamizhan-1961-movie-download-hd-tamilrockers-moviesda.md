@@ -1,6 +1,7 @@
 ---
 date: 2021-01-07 12:54:56
 layout: movie
+image: /assets/img/uploads/download-4-.jpg
 title: Kappalottiya Thamizhan (1961) Movie Download HD Tamilrockers Moviesda
 seotitle: Kappalottiya Thamizhan
 language: Tamil
