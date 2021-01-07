@@ -189,6 +189,7 @@ img {
     width: 100%;
     vertical-align: middle;
     border-radius: 5px;
+    height:100px;
 }
 figure>img {
     display: block;
