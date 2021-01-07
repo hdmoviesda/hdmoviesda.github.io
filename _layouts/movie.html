@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html prefix="og: http://ogp.me/ns# video: http://ogp.me/ns/video#">
 <head>
    {% assign url = '' %}
     {% if paginator.page_trail %}
@@ -7,6 +7,7 @@
     {% else %}
         {% assign url = page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url %}
     {% endif %}
+
 <title>{{page.title}}</title>
 <meta name="description" content="{{page.seotitle}} ({{page.year}}) Tamilrockers Download {{page.seotitle}} ({{page.year}}) Tamil Movie TamilRockers Download TamilRockers {{page.seotitle}} ({{page.year}}) Download ({{page.year}}) Mp4 Download Tamilrockers.Net">
 <meta name="keywords" content="isaimini, moviesda, kothamovies, jiorockers, tamilrockers, tamilmv, tamilblasters, tamilvaathi, tamilgun, tamilyogi, isaitamil, playtamil, masstamilan, starmusic, hotstar, disney">
@@ -15,6 +16,17 @@
 <meta property="og:description" content="{{page.seotitle}} Movie Download HD Tamilrockers">
 <meta property="og:url" content="{{ url }}">
 <meta property="og:image" content="{{page.image}}">
+<meta property="og:type" content="video.movie">
+<meta property="og:locale" content="en_IN">
+ {% for item in page.dlinks %}
+ {% if item.title and item.url %}   
+<meta property="og:video" content="{{item.url}}">
+<meta property="og:video:secure_url" content="{{item.url}}">   
+{% endif %}
+{% endfor %}
+<meta property="og:video:type" content="video/mp4">
+<meta property="og:video:width" content="472">
+<meta property="og:video:height" content="296">
 <meta charset="UTF-8" />
 <meta name="google" content="notranslate" />
 <meta http-equiv="Content-Language" content="en_US" />
