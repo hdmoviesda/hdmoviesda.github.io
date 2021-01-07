@@ -8,6 +8,20 @@ year: "1959"
 size: 653.14 MB
 quality: DVDRip
 category: Tamil 1959 Movies
+tags:
+  - B. R. Panthulu
+  - Sakthi T. K. Krishnasamy
+  - M. P. Sivagnanam
+  - Sivaji Ganesan
+  - Gemini Ganesan
+  - Padmini
+  - S. Varalakshmi
+  - Ragini
+  - V. K. Ramasamy
+  - Javar Seetharaman
+  - V. R. Rajagopal
+  - A. Karunanidhi
+  - Tambaram Lalitha
 dlinks:
   - title: VeeraPandiya Kattabomman Single Part HD.mp4
     quality: HDRip
