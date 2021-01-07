@@ -1,13 +1,21 @@
 ---
 date: 2021-01-07 16:48:16
 layout: movie
-title: Bale Pandya (1962) Movie Download HD Tamilrockers Moviesda
-seotitle: Bale Pandya
+image: /assets/img/uploads/download-7-.jpg
+title: Bale Pandiya (1962) Movie Download HD Tamilrockers Moviesda
+seotitle: Bale Pandiya
 language: Tamil
 year: "1962"
 size: 580.67 MB
 quality: 360p
 category: Tamil 1962 Movies
+tags:
+  - Sivaji Ganesan
+  - M. R. Radha
+  - K. Balaji
+  - Devika
+  - Vasanthi
+  - Sandhya
 dlinks:
   - title: Bale Pandya Single Part HD.mp4
     quality: HDRip
