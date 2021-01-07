@@ -258,5 +258,19 @@
 <p class="cen">
 With ♥ from {{site.name}} Team - {{ 'now' | date: "%Y" }}.
 </p>
+
+
+<script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "VideoObject",
+      "name": "{{page.seotitle}}",
+      "description": "Watch {{page.seotitle}} Movie online without ads on {{site.name}}.",
+      "thumbnailUrl": "{{ page.image }}",
+      "uploadDate": "{{ page.date }}",
+      "duration": "PT2H30M",
+      "contentUrl": "{{url}}"
+    }
+</script>
 </body>
 </html>
