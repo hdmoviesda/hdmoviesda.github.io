@@ -8,7 +8,7 @@ language: Tamil
 year: "1962"
 size: 615.7 MB
 quality: 360p
-category: Tamil 1961 Movies
+category: Tamil 1962 Movies
 tags:
   - Sivaji Ganesan
   - B. Saroja Devi
