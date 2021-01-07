@@ -204,7 +204,7 @@
            <ul itemscope itemtype="https://schema.org/SiteNavigationElement">
                                             {% for tag in page.tags %}
                                                 {% if tag != "" %}
-                                                   <li itemprop="name"> <a itemprop="url" href="{{ site.baseurl}}/tags/#{{tag | slugify }}"><span itemprop="name">{{ tag }} Movies Download</span></a></li>
+                                                   <li itemprop="name"> <a itemprop="url" href="{{ site.baseurl}}/tags/#{{tag | slugify }}">{{ tag }} Movies Download</a></li>
                                                 {% endif %}
                                             {% endfor %}
               </ul>
@@ -235,7 +235,7 @@
         
         
 {% for post in site.posts limit:15 %}  
-  <li itemprop="name"><a itemprop="url" href="{{ BASE_PATH }}{{ post.url }}"><span itemprop="name">{{ post.seotitle }}</span></a></li>  
+  <li itemprop="name"><a itemprop="url" href="{{ BASE_PATH }}{{ post.url }}">{{ post.seotitle }}</a></li>  
 {% endfor %}  
         
         
@@ -250,11 +250,11 @@
 {% assign categories_list = site.categories %}
   {% if categories_list.first[0] == null %}
     {% for category in categories_list %}
-      <li itemprop="name"><a itemprop="url" href="{{site.url}}/category/{{ category | downcase | downcase | url_escape | strip | replace: ' ', '-' }}"><span itemprop="name">{{ category | camelcase }} ({{ site.tags[category].size }})</span></a></li>
+      <li itemprop="name"><a itemprop="url" href="{{site.url}}/category/{{ category | downcase | downcase | url_escape | strip | replace: ' ', '-' }}">{{ category | camelcase }} ({{ site.tags[category].size }})</a></li>
     {% endfor %}
   {% else %}
     {% for category in categories_list %}
-      <li itemprop="name"><a itemprop="url" href="{{site.url}}/category/{{ category[0] | downcase | url_escape | strip | replace: ' ', '-' }}"><span itemprop="name">{{ category[0] | camelcase }} ({{ category[1].size }})</span></a></li>
+      <li itemprop="name"><a itemprop="url" href="{{site.url}}/category/{{ category[0] | downcase | url_escape | strip | replace: ' ', '-' }}">{{ category[0] | camelcase }} ({{ category[1].size }})</a></li>
     {% endfor %}
   {% endif %}
 {% assign categories_list = nil %}
