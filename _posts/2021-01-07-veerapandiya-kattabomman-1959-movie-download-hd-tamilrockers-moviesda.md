@@ -1,6 +1,7 @@
 ---
 date: 2021-01-07 12:27:14
 layout: movie
+image: /assets/img/uploads/download-2-.jpg
 title: Veerapandiya Kattabomman (1959) Movie Download HD Tamilrockers Moviesda
 seotitle: Veerapandiya Kattabomman
 language: Tamil
