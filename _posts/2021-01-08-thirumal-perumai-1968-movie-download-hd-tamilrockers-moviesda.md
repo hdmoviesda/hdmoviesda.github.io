@@ -1,6 +1,7 @@
 ---
 date: 2021-01-08 16:34:53
 layout: movie
+image: /assets/img/uploads/thirumal_perumai_-1968-_movie_poster.jpg
 title: Thirumal Perumai (1968) Movie Download HD Tamilrockers Moviesda
 seotitle: Thirumal Perumai
 language: Tamil
