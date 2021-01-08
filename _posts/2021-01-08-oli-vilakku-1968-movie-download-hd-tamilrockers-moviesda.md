@@ -1,6 +1,7 @@
 ---
 date: 2021-01-08 16:32:18
 layout: movie
+image: /assets/img/uploads/oli_vilakku_-1968-_movie_poster.jpg
 title: Oli Vilakku (1968) Movie Download HD Tamilrockers Moviesda
 seotitle: Oli Vilakku
 language: Tamil
