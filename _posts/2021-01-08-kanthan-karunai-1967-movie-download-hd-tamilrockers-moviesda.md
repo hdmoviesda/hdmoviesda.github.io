@@ -1,8 +1,9 @@
 ---
 date: 2021-01-08 16:19:09
 layout: movie
-title: Kanthan Karunai (1967) Movie Download HD Tamilrockers Moviesda
-seotitle: Kanthan Karunai
+image: /assets/img/uploads/download-18-.jpg
+title: Kandhan Karunai (1967) Movie Download HD Tamilrockers Moviesda
+seotitle: Kandhan Karunai
 language: Tamil
 year: "1967"
 size: 576.55 MB
