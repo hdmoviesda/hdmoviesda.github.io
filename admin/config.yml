@@ -64,7 +64,7 @@ collections:
                 name: "quality"
                 widget: "string"
                 default: "HD"
-                - label: "Size"
+              - label: "Size"
                 name: "size"
                 widget: "string"
               - label: "URL"
