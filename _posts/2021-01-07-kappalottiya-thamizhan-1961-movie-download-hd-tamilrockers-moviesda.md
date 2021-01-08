@@ -10,11 +10,26 @@ size: 694.67 MB
 quality: DVD
 category: Tamil 1961 Movies
 tags:
-  - Sivaji Ganesan Gemini Ganesan T. K. Shanmugam  S. V.
-    Subbaiah  Balaji  Nagaiah  T. S. Durairaj  Karunanidhi  M. N. Kannappa  M.
-    R. Santhanam  T. N. Sivathanu  Veerasami  Eswaran  K. V.
-    Srinivasan  Parthiban  Natarajan  S. A. Kannan Nannu Sayeeram Master
-    Thyagarajan
+  - Sivaji Ganesan
+  - Gemini Ganesan
+  - T. K. Shanmugam
+  - S. V. Subbaiah
+  - Balaji
+  - Nagaiah
+  - T. S. Durairaj
+  - Karunanidhi
+  - M. N. Kannappa
+  - M. R. Santhanam
+  - T. N. Sivathanu
+  - Veerasami
+  - Eswaran
+  - K. V. Srinivasan
+  - Parthiban
+  - Natarajan
+  - S. A. Kannan
+  - Nannu
+  - Sayeeram
+  - Master Thyagarajan
 dlinks:
   - title: Download Server 1
     quality: DVDRip
