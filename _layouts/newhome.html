@@ -107,8 +107,19 @@
   {% endif %}
 {% assign categories_list = nil %}
 </ul>
+      
+      
+      
          </section>
     
+    <section class="wid ctr left">
+    <h4 class="wtitle cen">Series</h4>
+    {% for item in site.series %}
+       <ul>
+         <li><a href="{{ item.url }}">{{ item.title }}</a></li>     
+      </ul>
+{% endfor %}
+         </section>
 </div>
 </section>
   </div>
