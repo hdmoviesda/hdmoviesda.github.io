@@ -10,8 +10,15 @@ size: 628.66 MB
 quality: DVD
 category: Tamil 1962 Movies
 tags:
-  - Sivaji Ganesan  Gemini Ganesan  Savitri  B. Saroja Devi  Sowcar
-    Janaki  Kamal Haasan  K. A. Thangavelu  M. Saroja  C. K. Saraswathi
+  - Sivaji Ganesan
+  - Gemini Ganesan
+  - Savitri
+  - B. Saroja Devi
+  - Sowcar Janaki
+  - Kamal Haasan
+  - K. A. Thangavelu
+  - M. Saroja
+  - C. K. Saraswathi
 dlinks:
   - title: Paarthaal Pasi Theerum Single Part HD.mp4
     quality: HDRip
