@@ -259,6 +259,9 @@
   {% endif %}
 {% assign categories_list = nil %}
 </ul>
+           {% for series in site.series limit:10 %}
+  {{ post.url }}
+{% endfor %}
          </section>
     
     
