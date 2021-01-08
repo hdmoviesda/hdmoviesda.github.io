@@ -103,6 +103,8 @@ permalink: /:title/
 collections:
   authors:
     output: true
+  series:
+    output: true
 paginate_path: "/page/:num/"
 show_get_theme_btn: false
 use_logo: false
