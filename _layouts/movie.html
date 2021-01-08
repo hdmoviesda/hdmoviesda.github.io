@@ -259,8 +259,10 @@
   {% endif %}
 {% assign categories_list = nil %}
 </ul>
-           {% for series in site.series limit:10 %}
-  {{ post.url }}
+           {% for item in site.series %}
+  <h2>{{ item.title }}</h2>
+  <p>{{ item.description }}</p>
+  <p><a href="{{ item.url }}">{{ item.title }}</a></p>
 {% endfor %}
          </section>
     
