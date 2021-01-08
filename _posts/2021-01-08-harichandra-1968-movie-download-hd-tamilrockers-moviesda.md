@@ -1,6 +1,7 @@
 ---
 date: 2021-01-08 16:46:06
 layout: movie
+image: /assets/img/uploads/download-21-.jpg
 title: Harichandra (1968) Movie Download HD Tamilrockers Moviesda
 seotitle: Harichandra
 language: Tamil
