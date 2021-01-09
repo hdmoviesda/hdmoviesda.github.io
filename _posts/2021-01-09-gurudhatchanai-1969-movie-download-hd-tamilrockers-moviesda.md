@@ -8,7 +8,7 @@ language: Tamil
 year: "1969"
 size: 518.97 MB
 quality: HD
-category: Tamil 1958 Movies
+category: Tamil 1969 Movies
 dlinks:
   - title: Download Server 1
     quality: HDRip
