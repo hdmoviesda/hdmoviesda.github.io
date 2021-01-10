@@ -54,8 +54,10 @@
           <!-- Search input field -->
   <div class="main-search form-group mb-0 border-bottom">
   <div class="input-group">
-    <input id="search" name="main_input" class="form-control border-0" style=" width: 50%; font-size: medium; height: 30px; " placeholder="type to search" type="text">
-    <div class="input-group-append">
+    <form  action="/search" method="get">
+    <input id="search" name="main_input" name="q" class="form-control border-0" style=" width: 50%; font-size: medium; height: 30px; " placeholder="type to search" type="text">
+   </form>
+      <div class="input-group-append">
       <span class="input-group-text border-0"><i class="fa fa-search" aria-hidden="true"></i></span>
     </div>
   </div>
