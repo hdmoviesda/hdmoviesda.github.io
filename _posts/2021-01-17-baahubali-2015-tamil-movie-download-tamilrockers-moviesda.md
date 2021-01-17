@@ -1,6 +1,7 @@
 ---
 date: 2021-01-17 18:26:54
 layout: movie
+image: https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTPstYnAHwdL62MPyRR3gMGsCWMn-MezO8clA&usqp=CAU
 title: Baahubali (2015) Tamil Movie Download Tamilrockers Moviesda
 seotitle: Baahubali (2015)
 language: Tamil
