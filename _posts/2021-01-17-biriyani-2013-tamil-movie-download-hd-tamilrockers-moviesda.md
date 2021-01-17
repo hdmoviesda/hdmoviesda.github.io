@@ -1,6 +1,7 @@
 ---
 date: 2021-01-17 18:35:57
 layout: movie
+image: https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRFVDX007tvym-B55AVXrD6u2rs1Jm3xBL1FQ&usqp=CAU
 title: Biriyani (2013) Tamil Movie Download HD Tamilrockers Moviesda
 seotitle: Biriyani
 language: Tamil
