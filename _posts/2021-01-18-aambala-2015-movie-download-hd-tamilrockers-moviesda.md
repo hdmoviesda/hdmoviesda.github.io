@@ -1,6 +1,7 @@
 ---
 date: 2021-01-18 17:26:47
 layout: movie
+image: https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRsfM2JIHaV9cTh0CCMTp1jQuzLBySLVGbonQ&usqp=CAU
 title: Aambala (2015) Movie Download HD Tamilrockers Moviesda
 seotitle: Aambala
 language: Tamil
