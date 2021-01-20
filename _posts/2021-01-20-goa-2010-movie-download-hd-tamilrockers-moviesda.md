@@ -3,7 +3,7 @@ date: 2021-01-20 19:58:29
 layout: movie
 image: https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1eCNClR9AM2UbUwZ2vuCFLU1ZL72W6T_Wtg&usqp=CAU
 title: Goa (2010) Movie Download HD Tamilrockers Moviesda
-seotitle: Goa (2010)
+seotitle: Goa
 language: Tamil
 year: "2010"
 size: 580.52MB
