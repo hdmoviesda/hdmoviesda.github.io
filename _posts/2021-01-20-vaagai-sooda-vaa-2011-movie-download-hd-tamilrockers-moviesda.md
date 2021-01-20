@@ -6,7 +6,7 @@ title: Vaagai Sooda Vaa (2011) Movie Download HD Tamilrockers Moviesda
 seotitle: Vaagai Sooda Vaa
 language: Tamil
 year: "2011"
-size: 613.97MB
+size: 515.85MB
 quality: DVDRip
 category: Tamil 2011 Movies
 tags:
@@ -20,5 +20,5 @@ tags:
 dlinks:
   - title: Download Server 1
     quality: DVDRip
-    url: http://s30.uptofiles.net//files/Tamil%20HD%20Mobile%20Movies/Aaravadhu%20Vanam%20(2011)/Aaravadhu%20Vanam%20(HD)/Aaravadhu%20Vanam%20(640x360)/Aaravadhu%20Vanam%20201%20HD.mp4
+    url: http://s23.uptofiles.net//files/Tamil%20HD%20Mobile%20Movies/Vaagai%20Sooda%20Vaa%20(2011)/Vaagai%20Sooda%20Vaa%20(Original)/Vaagai%20Sooda%20Vaa%20(640x360)/Vaagai%20Sooda%20Vaa%20201%20HD.mp4
 ---
