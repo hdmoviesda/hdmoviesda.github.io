@@ -1,9 +1,10 @@
 ---
 date: 2021-01-20 13:08:05
 layout: movie
+image: http://s6.uptofiles.net//files/Tamil%202012%20Movies/Oru%20Kal%20Oru%20Kannadi%20(2012)/Mp4%20HD%20(Single%20Part)%20-%20(480x320)/Oru%20Kal%20Oru%20Kannadi%20(2012)%20Single%20Part%20(480x320).mp4
 title: Oru Kal Oru Kannadi (2012) Movie Download HD Tamilrockers Moviesda
 seotitle: Oru Kal Oru Kannadi
-language: Telugu
+language: Tamil
 year: "2012"
 size: 552.44MB
 quality: HD
