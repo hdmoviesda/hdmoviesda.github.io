@@ -8,7 +8,7 @@ language: Tamil
 year: "1998"
 size: 747.4MB
 quality: DVD HD
-category: Tamil 2002 Movies
+category: Tamil 1998 Movies
 dlinks:
   - title: Download Server 1
     quality: HDRip
