@@ -36,13 +36,13 @@
 <body class="light">
 {% include line.html %}
 
-  
+    <h2 class="left pad10">{{ post.category }}</h2>
+
   <div class="box cen">
 <section class="bots ib">
   
   
   <div class="home-page">
-  <h2 class="left pad10">{{ post.category }}</h2>
                           {% assign posts = site.posts | where_exp:"post","post.is_generated != true" %}
                     {% for post in posts %}
                         {% if post.category == page.slug %}
