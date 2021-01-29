@@ -3,7 +3,7 @@
 .line{background-color: #308bcf; color: #ffffff; font-weight: bold; padding: 10px 10px 10px 10px; text-align: center; text-decoration: none; margin-bottom: 0px; font-size: small;}
 .f {color: #4f4f4f ; background: #f9f9f9; padding-top: 8px; padding-left: 3px; padding-bottom: 2px; font-size: 14px; text-align: left; border-bottom: 1px dotted #afcddc; }
 </style>
- <div class="Adz">
+ <div class="Adz" style=" margin-top: 20px; ">
 <div class="cen">
     <section>
       <section class="cen">
@@ -28,7 +28,7 @@
       </section>
       
       
-      <section class="wid cen">
+      <section class="cen">
 
         <div>
 <!-- Search result container -->
@@ -52,7 +52,7 @@
   SimpleJekyllSearch({
     searchInput: document.getElementById('search'),
     resultsContainer: document.getElementById('results'),
-    searchResultTemplate: '<div class="f" title="{seotitle}"> <a href="{url}">{seotitle}</a></div>',
+    searchResultTemplate: '<div align="center" class="f" title="{seotitle}"> <a href="{url}">{seotitle}</a></div>',
     noResultsText: '<li><p>No results found!</p></li>',
     json: '/search.json'
   })
