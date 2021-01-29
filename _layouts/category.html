@@ -36,7 +36,14 @@
 <body class="light">
 {% include line.html %}
 
-    <h2 class="left pad10">{{ post.category }}</h2>
+    <div class="bcrumbs bold box" style="margin-top: 10px;">
+  <div itemscope="itemscope" itemtype="http://schema.org/BreadcrumbList">
+        <div itemscope="itemscope" itemtype="http://schema.org/ListItem" itemprop="itemListElement">
+              <a class="" itemprop="item" href="/">
+                    <span itemprop="name">Home</span>
+              </a>
+              <meta itemprop="position" content="1"></div> » <div itemscope="itemscope" itemtype="http://schema.org/ListItem" itemprop="itemListElement"><a class="" itemprop="item" href="{{url}}"><span itemprop="name">{{page.title}}</span></a><meta itemprop="position" content="2"></div></div>
+</div>
 
   <div class="box cen">
 <section class="bots ib">
