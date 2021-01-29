@@ -6,6 +6,9 @@
   {% for post in posts %}
     {
       "seotitle"    : "{{ post.seotitle | escape }}",
+      "language"    : "{{ post.language | escape }}",
+      "year"    : "{{ post.year | escape }}",
+      "Size"    : "{{ post.Size | escape }}",
       "tags"     : "{{ post.tags | array_to_sentence_string }}",
       "categories" : "{{ post.category }}",
       "url"      : "{{ site.baseurl }}{{ post.url }}",
