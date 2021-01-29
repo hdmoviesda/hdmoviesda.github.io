@@ -30,10 +30,10 @@
       
       <section class="cen">
 
-        <div>
+        <div align="center" >
 <!-- Search result container -->
 <div class="search-results position-absolute" style="display: none;">
-      <ul id="results" class="search-results-ul card shadow border border-top-0"></ul>
+      <ul id="results" align="center" class="search-results-ul card shadow border border-top-0"></ul>
 </div>
         </div>
       </section>
@@ -52,7 +52,7 @@
   SimpleJekyllSearch({
     searchInput: document.getElementById('search'),
     resultsContainer: document.getElementById('results'),
-    searchResultTemplate: '<div align="center" class="f" title="{seotitle}"> <a href="{url}">{seotitle}</a></div>',
+    searchResultTemplate: '<div class="f" title="{seotitle}"> <a href="{url}">{seotitle}</a></div>',
     noResultsText: '<li><p>No results found!</p></li>',
     json: '/search.json'
   })
