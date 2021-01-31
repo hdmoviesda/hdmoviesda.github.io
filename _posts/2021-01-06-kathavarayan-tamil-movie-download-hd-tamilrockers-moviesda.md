@@ -2,7 +2,7 @@
 date: 2021-01-06 19:14:25
 layout: movie
 image: /assets/img/uploads/kaathavaraayan.jpg
-title: Kathavarayan Tamil Movie Download HD Tamilrockers Moviesda
+title: Kathavarayan (1958) Tamil Movie Download HD Tamilrockers Moviesda
 seotitle: Kaathavarayan
 language: Tamil
 year: "1958"
