@@ -5,10 +5,10 @@ image: data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxMTEhUSExMVFR
 title: Aathikka Varkkam (2021) Tamil Movie Download HD Tamilrockers Moviesda
 seotitle: Aathikka Varkkam
 language: Tamil
-year: "2020"
+year: "2021"
 size: 615.72MB
 quality: DVD Print
-category: Tamil 2020 Movies
+category: Tamil 2021 Movies
 dlinks:
   - title: Download Server 1
     quality: DVDSCR
