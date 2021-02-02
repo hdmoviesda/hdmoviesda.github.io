@@ -37,4 +37,5 @@ Disallow: /cgi-bin/
 Disallow: /search
 Disallow: /admin
 Disallow: /author
-Sitemap: https://hotstar.uno/sitemap
+Sitemap: https://hotstar.uno/sitemap.xml
+Sitemap: https://hotstar.uno/video.xml
