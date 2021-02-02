@@ -21,7 +21,7 @@ xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
 <video:thumbnail_loc>{{ post.image | xml_escape }}</video:thumbnail_loc> 
 <video:title>Watch {{ post.seotitle | xml_escape }} ({{ post.year }}) Movie Online on {{site.name}}</video:title>
 <video:description>{{ post.title | xml_escape }}</video:description>
-<video:content_loc>{{ post.url | prepend: site.baseurl | prepend: site.url }}</video:content_loc>
+<video:content_loc>http://s26.uptofiles.net//files/Tamil%202021%20Movies/Nedunchalai%20(2014)/Nedunchalai%20(Original)/Nedunchalai%20(Tamil)/Nedunchalai%20(640x360)/Nedunchalai%202014%20HD.mp4</video:content_loc>
 <video:duration>7542</video:duration>
 <video:requires_subscription>yes</video:requires_subscription>
 <video:uploader info="{{ site.url }}">{{ site.name }}</video:uploader>
