@@ -24,7 +24,7 @@ xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
 <video:content_loc>{{ post.url | prepend: site.baseurl | prepend: site.url }}</video:content_loc>
 <video:duration>7542</video:duration>
 <video:requires_subscription>yes</video:requires_subscription>
-<video:uploader info="https://hotstar.uno"/>
+<video:uploader info="{{ site.url }}">{{ site.name }}</video:uploader>
 <video:live>no</video:live>
 </video:video>
         <changefreq>weekly</changefreq>
