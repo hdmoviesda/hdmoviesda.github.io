@@ -92,6 +92,9 @@
   {% endif %}
 {% assign categories_list = nil %}
 </ul>
+         {% for item in site.series limit:15 %}  
+  <li  itemprop="name"><a itemprop="url"href="{{ BASE_PATH }}{{ post.url }}">{{ post.seotitle }}</a></li>  
+{% endfor %}  
          </section>
     
 </div>
