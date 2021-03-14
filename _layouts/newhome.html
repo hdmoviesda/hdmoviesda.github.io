@@ -93,8 +93,8 @@
 {% assign categories_list = nil %}
 </ul>
           <ul itemscope itemtype="https://schema.org/SiteNavigationElement">
-{% for series in site.series limit:15 %}  
-  <li  itemprop="name"><a itemprop="url"href="{{ BASE_PATH }}{{ post.url }}">{{ post.seotitle }}</a></li>  
+{% for item in site.series %}
+  <li  itemprop="name"><a itemprop="url"href="{{ BASE_PATH }}{{ item.url }}">{{ item.seotitle }}</a></li>  
 {% endfor %}  
         
         
