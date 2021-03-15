@@ -1,13 +1,5 @@
-<div>
-
-{% for post in paginator.articles %}
-  
-  
-  
-  <ul itemscope="" itemtype="https://schema.org/SiteNavigationElement">
-<li itemprop="name"><a itemprop="url" href="{{ article.url }}s">{{ article.title }}</a></li>
-</ul>
-  
-  {% endfor %}  
-{% include pagination-home.html %}
-           </div>
+<ul itemscope itemtype="https://schema.org/SiteNavigationElement">
+{% for item in site.articles limit:15 %}
+  <li  itemprop="name"><a itemprop="url"href="{{ BASE_PATH }}{{ item.url }}">{{ item.title }}</a></li>  
+{% endfor %}  
+    </ul>
