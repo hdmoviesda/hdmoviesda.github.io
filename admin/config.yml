@@ -4,7 +4,7 @@ backend:
 media_folder: "assets/img/uploads"
 collections:
   - label: "News Article"
-    name: "article"
+    name: "articles"
     folder: "_articles"
     create: true
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
