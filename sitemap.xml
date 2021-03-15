@@ -16,6 +16,14 @@ layout: null
             {% endif %}
         </url>
     {% endfor %}
+    {% for article in site.articles %}
+        <url>
+            <loc>{{ article.url | prepend: site.baseurl | prepend: site.url }}</loc>
+            <changefreq>weekly</changefreq>
+            <priority>0.8</priority>
+            <lastmod>{{ post.date | date: "%Y-%m-%d" }}</lastmod>
+        </url>
+    {% endfor %}
     {% for post in site.posts %}
         <url>
             <loc>{{ post.url | prepend: site.baseurl | prepend: site.url }}</loc>
