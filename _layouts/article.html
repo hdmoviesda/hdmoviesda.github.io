@@ -7,6 +7,21 @@
 <head>
   <meta charset="utf-8">
      <title>{{page.title}}</title>
+     <meta name="description" content="{{page.description}}">
+     <meta property="og:url" content="{{url}}">
+<meta property="og:image" content="{{page.image}}">
+<meta property="og:description" content="{{page.description}}">
+
+     <meta name="google" content="notranslate" />
+<meta itemprop="isFamilyFriendly" content="true">
+<meta itemprop="copyrightYear" content="{{ 'now' | date: "%Y" }}">
+<link href="{{url}}" rel="canonical" />
+<meta name="robots" content="index,follow">
+<meta name="audience" content="all">
+<meta name="theme-color" content="#0085ef">
+<meta name="msapplication-TileColor" content="#0085ef">
+<meta name="mobile-web-app-capable" content="yes">
+     
   <link rel="canonical" href="self.html">
   <meta name="viewport" content="width=device-width,minimum-scale=1">
   <style amp-boilerplate>
@@ -31,7 +46,7 @@ body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animatio
      
 <div class="line"><div>Hotstar</div></div>
      <main>
-     
+     {{ content }}
      </main>
      </body>
 </html>
