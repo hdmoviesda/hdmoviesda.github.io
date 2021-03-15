@@ -105,6 +105,8 @@ collections:
     output: true
   series:
     output: true
+  articles:
+    output: true
 paginate_path: "/page/:num/"
 show_get_theme_btn: false
 use_logo: false
