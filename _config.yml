@@ -116,6 +116,7 @@ paginate_content:
   collections:
     - posts
     - series
+    - articles
   auto: false
   separator: "--page-break--"
   permalink: "/:num/"
