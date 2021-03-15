@@ -1,0 +1,13 @@
+<div>
+
+{% for post in paginator.articles %}
+  
+  
+  
+  <ul itemscope="" itemtype="https://schema.org/SiteNavigationElement">
+<li itemprop="name"><a itemprop="url" href="{{ post.url }}s">{{ post.title }}</a></li>
+</ul>
+  
+  {% endfor %}  
+{% include pagination-home.html %}
+           </div>
