@@ -1,0 +1,6 @@
+<ul itemscope itemtype="https://schema.org/SiteNavigationElement">
+{% for item in site.articles %}
+  <li  itemprop="name"><a itemprop="url"href="{{ BASE_PATH }}{{ item.url }}">{{ item.title }}</a></li>  
+{% endfor %}  
+        
+        
