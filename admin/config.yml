@@ -45,7 +45,7 @@ collections:
       - label: "Body"
         name: "body"
         widget: "markdown"
-  - label: "Web Series"
+  - label: "Series"
     name: "series"
     folder: "_series"
     create: true
