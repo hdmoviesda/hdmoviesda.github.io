@@ -51,12 +51,19 @@ body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animatio
     font-family: sans-serif;
                  }
      </style>
-
+<style>
+.responsive {
+  width: 100%;
+  height: auto;
+}
+</style>
 </head>
 <body>
      
 <div class="line"><span style=" font-size: medium; font-family: -webkit-pictograph; ">Hotstar</span></div>
-     <main >
+     <main>
+          <h2>{{page.title}}</h2>
+<img src="{{page.image}}" alt="{{page.title}}" class="responsive" width="600" height="400">
      {{ content }}
      </main>
      </body>
