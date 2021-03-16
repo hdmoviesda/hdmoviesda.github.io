@@ -5,6 +5,32 @@
 <!doctype html>
 <html>
 <head>
+     <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "NewsArticle",
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://google.com/article"
+      },
+      "headline": "{{page.title}}",
+      "image":"{{page.image}}",
+      "datePublished": "{{ site.time | date_to_xmlschema }}",
+      "dateModified": "{{ page.time | date_to_xmlschema }}",
+      "author": {
+        "@type": "Person",
+        "name": "John Doe"
+      },
+       "publisher": {
+        "@type": "Organization",
+        "name": "Google",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://google.com/logo.jpg"
+        }
+      }
+    }
+    </script>
      {% assign url = '' %}
     {% if paginator.page_trail %}
         {% assign url = paginator.first_page_path | replace:'index.html','' | prepend: site.baseurl | prepend: site.url %}
