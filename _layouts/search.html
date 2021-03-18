@@ -1,7 +1,17 @@
 ---
 ---
 [
-  {% assign posts = site.posts | where_exp:"post","post.is_generated != true" %}
+{% assign posts = site.torrents | where_exp:"post","post.is_generated != true" %}
+  {% assign date_format = site.date_format | default: "%m/%d/%Y" %}
+  {% for torrent in torrents %}
+    {
+      "title"    : "{{ torrent.title | escape }}",
+      "torrent"    : "{{ torrent.torrent | escape }}",
+      "magnet"    : "{{ torrent.magnet | escape }}",
+      "date"     : "{{ torrent.date | date: date_format }}"
+    } {% unless forloop.last %},{% endunless %}
+  {% endfor %}
+{% assign posts = site.posts | where_exp:"post","post.is_generated != true" %}
   {% assign date_format = site.date_format | default: "%m/%d/%Y" %}
   {% for post in posts %}
     {
