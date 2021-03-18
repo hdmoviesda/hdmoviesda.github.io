@@ -11,10 +11,10 @@ layout: null
     <pubDate>{{ site.time | date_to_rfc822 }}</pubDate>
     <lastBuildDate>{{ site.time | date_to_rfc822 }}</lastBuildDate>
     <generator>Jekyll v{{ jekyll.version }}</generator>
-    {% for torrent in site.torrents limit:30 %}
+    {% for torrent in site.torrents limit:500 %}
       <item>
         <title>{{ torrent.title | xml_escape }}</title>
-        <description>{{ torrent.content | xml_escape | strip_html | truncatewords:100 }}</description>
+        <description>{{ torrent.title | xml_escape | strip_html | truncatewords:100 }}</description>
         <pubDate>{{ torrent.date | date_to_rfc822 }}</pubDate>
         <link>{{ torrent.url | prepend: site.baseurl | prepend: site.url }}</link>
         <guid isPermaLink="true">{{ torrent.url | prepend: site.baseurl | prepend: site.url }}</guid>
