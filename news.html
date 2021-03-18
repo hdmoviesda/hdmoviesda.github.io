@@ -1,3 +1,6 @@
+---
+layout: null
+---
 {% for torrent in site.torrents limit:10 %}
 <a href='{{ torrent.url | prepend: site.baseurl | prepend: site.url }}'>{{ torrent.title | xml_escape }}</a>
 {% endfor %}
