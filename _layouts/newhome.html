@@ -48,12 +48,22 @@
    {% include recent.html %}
 </div>
 </div>
-     
-     <section class="wid ctr" style="margin-top: 10px;">
+        <section class="wid ctr" style="margin-top: 10px;margin-bottom: 10px;">
+<h4 class="wtitle cen">Torrents</h4>
+<ul itemscope itemtype="https://schema.org/SiteNavigationElement">
+{% for item in site.torrents limit:40 %}
+  <li  itemprop="name"><a itemprop="url"href="{{ BASE_PATH }}{{ item.url }}">{{ item.title }}</a></li>  
+{% endfor %}  
+    </ul>          
+</section>
+     <section class="wid ctr" style="margin-top: 10px;margin-bottom: 10px;">
 <h4 class="wtitle cen">Recent News</h4>
    {% include recentnews.html %}
           
 </section>
+     
+     
+     
 </section>
         
     <section class="sbar ib cen">
