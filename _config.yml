@@ -109,6 +109,8 @@ collections:
     output: true
   others:
     output: true
+  torrents:
+    output: true
 paginate_path: "/page/:num/"
 show_get_theme_btn: false
 use_logo: false
@@ -122,6 +124,7 @@ paginate_content:
     - series
     - others
     - articles
+    - torrents
   auto: false
   separator: "--page-break--"
   permalink: "/:num/"
