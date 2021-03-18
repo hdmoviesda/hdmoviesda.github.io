@@ -24,6 +24,14 @@ layout: null
             <lastmod>{{ post.date | date: "%Y-%m-%d" }}</lastmod>
         </url>
     {% endfor %}
+    {% for torrent in site.torrents %}
+        <url>
+            <loc>{{ torrent.url | prepend: site.baseurl | prepend: site.url }}</loc>
+            <changefreq>weekly</changefreq>
+            <priority>0.8</priority>
+            <lastmod>{{ post.date | date: "%Y-%m-%d" }}</lastmod>
+        </url>
+    {% endfor %}
     {% for post in site.posts %}
         <url>
             <loc>{{ post.url | prepend: site.baseurl | prepend: site.url }}</loc>
@@ -39,4 +47,5 @@ layout: null
             <priority>0.5</priority>
         </url>
         {% endfor %}
+    
 </urlset>
