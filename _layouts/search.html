@@ -1,7 +1,7 @@
 ---
 ---
 [
-{% assign posts = site.torrents | where_exp:"post","post.is_generated != true" %}
+{% assign torrents = site.torrents | where_exp:"torrent","torrent.is_generated != true" %}
   {% assign date_format = site.date_format | default: "%m/%d/%Y" %}
   {% for torrent in torrents %}
     {
