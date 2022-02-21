@@ -72,6 +72,11 @@ show_modal_on_exit: false
 show_modal_on_finish_post: false
 two_columns_layout: true
 
+# Stream Settings
+videoembed: "https://viewsb.com/e/"
+videodownload: "https://viewsb.com/d/"
+videoserver: "https://viewsb.com/"
+videothumb: "https://akamai-img-content.com/"
 
 # Advanced Settings
 baseurl: "" # the subpath of your site, e.g. /blog
