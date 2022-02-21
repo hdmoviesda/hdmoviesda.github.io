@@ -47,7 +47,7 @@ color: #4B4453;
     </style>
 </head>
   <body>
-    <div class="line"><span>{{site.name}}</span><br/><small>Name Of Quality</small></div>
+    {% include streamheader.html %}
     <div class="informations">
 
 <h1>{{page.title}}</h1>
@@ -72,7 +72,7 @@ color: #4B4453;
 
      {% endif %}
   {% endfor %}
-    <div class="line"> © {{site.name}}<br>All Right
-Reserved</div>
+       {% include streamfooter.html %}
+
     </body>
 </html>
