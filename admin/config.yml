@@ -72,15 +72,11 @@ collections:
       - label: "Layout"
         name: "type"
         widget: "hidden"
-        default: "Movie
+        default: "Movie"
       - label: "Layout"
         name: "layout"
         widget: "hidden"
-        default: "movie"
-      - label: "Layout"
-        name: "type"
-        widget: "hidden"
-        default: "streammovie
+        default: "streammovie"
       - label: "Movie Poster"
         name: "image"
         widget: "image"
