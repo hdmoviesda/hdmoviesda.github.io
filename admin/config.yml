@@ -70,13 +70,17 @@ collections:
         widget: "datetime"
         format: "YYYY-MM-DD HH:mm:ss"
       - label: "Layout"
+        name: "type"
+        widget: "hidden"
+        default: "Movie
+      - label: "Layout"
         name: "layout"
         widget: "hidden"
         default: "movie"
       - label: "Layout"
         name: "type"
         widget: "hidden"
-        default: "streamvideo"
+        default: "streammovie
       - label: "Movie Poster"
         name: "image"
         widget: "image"
