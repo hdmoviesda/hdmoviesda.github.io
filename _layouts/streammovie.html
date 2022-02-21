@@ -45,10 +45,7 @@ color: #4B4453;
 <h1>{{page.title}} ({{page.year}}) Movie Download</h1>
 
 </div>
-    <div style="display: none;" id="StreamID">
-    <iframe src="{{site.videoembed}}{{page.streamcode}}" style="border:0px #ffffff none;" name="myiFrame" scrolling="no" frameborder="0" marginheight="0px" marginwidth="0px" height="300px" width="100%" allowfullscreen>
-    </iframe>
-      </div>
+ 
     
 
     <div class="line">Movie Information</div>
@@ -78,7 +75,10 @@ color: #4B4453;
 .isai-panel{padding:0.01em 16px}
 .isai-panel{margin-top:1px; margin-bottom:0px}
 .isai-panel:after, .w3-panel:before</style></div>
-    
+       <div style="display: none;" id="StreamID">
+    <iframe src="{{site.videoembed}}{{page.streamcode}}" style="border:0px #ffffff none;" name="myiFrame" scrolling="no" frameborder="0" marginheight="0px" marginwidth="0px" height="300px" width="100%" allowfullscreen>
+    </iframe>
+      </div>
             <center>
             <div onclick="StreamFunction()" class="tron">Watch Online</div>
        </center>
