@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="language" content="en-us" />
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Watch {{page.title}} Full Video Online Free</title>
+<link rel="STYLESHEET" type="text/css" href="https://isaimini.moviesdamob.com/styles.css" media="all,handheld"/>
+  <style>
+.informations {
+    padding: 10px 5px;
+   background-color: #FDF7FF;
+}
+
+.informations h1 {
+color:#ea1e4e;
+font-size: 16px;
+}
+
+.informations p1 {
+color: #4B4453;
+}
+    .tron {
+   -webkit-border-radius: 0;
+   -moz-border-radius: 0;
+   border-radius: 0;
+   color: #FFFFFF;
+   font-family: Open Sans;
+   font-size: 18px;
+   font-weight: 100;
+   padding: 14px;
+   background-color: #000000;
+   text-decoration: none;
+   display: inline-block;
+   cursor: pointer;
+   text-align: center;
+}
+
+.tron:hover {
+   background: #000000;
+   border: solid #00E2FF 5px;
+   -webkit-border-radius: 0;
+   -moz-border-radius: 0;
+   border-radius: 0;
+   text-decoration: none;
+}
+    </style>
+</head>
+  <body>
+    <div class="line"><span>{{site.name}}</span><br/><small>Name Of Quality</small></div>
+    <div class="informations">
+
+<h1>{{page.title}}</h1>
+
+</div>
+    <iframe src="{{site.videoembed}}{{page.streamcode}}" style="border:0px #ffffff none;" name="myiFrame" scrolling="no" frameborder="0" marginheight="0px" marginwidth="0px" height="300px" width="100%" allowfullscreen>
+    </iframe>
+      <center>
+    <a href="{{site.videodownload}}{{page.streamcode}}" class="tron">Download File</a>
+       </center>
+    <div class="line"><b>Screenshots</b></div>
+<img style = "width: 100%; height: 60%; " src="https://akamai-img-content.com/{{page.streamcode}}_xt.jpg"  alt=""  /> 
+        <div class="line"><b>Download this Video</b></div>
+  
+    
+    
+    {% for item in page.dlinks %}
+    {% if item.title and item.url %}
+    
+      <div class="f" title="{{item.title}} movie download {{item.quality}}"> <img src="https://moviesda.download/img/dir.gif" alt="{{item.title}} {{site.name}}" /> <a href="{{item.url}}">{{item.title}} ({{item.size}})</a></div>
+
+     {% endif %}
+  {% endfor %}
+    
+    
+    
+    <div class="line"> © {{site.name}}<br>All Right
+Reserved</div>
+    </body>
+</html>
