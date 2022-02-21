@@ -53,9 +53,13 @@ color: #4B4453;
 <h1>{{page.title}}</h1>
 
 </div>
+    <div style="display: none;" id="StreamID">
     <iframe src="{{site.videoembed}}{{page.streamcode}}" style="border:0px #ffffff none;" name="myiFrame" scrolling="no" frameborder="0" marginheight="0px" marginwidth="0px" height="300px" width="100%" allowfullscreen>
     </iframe>
+      </div>
+    
       <center>
+            <a href="" onclick="StreamFunction()" class="tron">Watch Online</a>
     <a href="{{site.videodownload}}{{page.streamcode}}" class="tron">Download File</a>
        </center>
     <div class="line">Movie Information</div>
@@ -101,6 +105,15 @@ color: #4B4453;
     
     
            {% include streamfooter.html %}
-
+<script>
+function StreamFunction() {
+  var x = document.getElementById("StreamID");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+</script>
     </body>
 </html>
