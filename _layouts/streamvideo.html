@@ -7,6 +7,19 @@
 <title>Watch {{page.title}} Full Video Online Free</title>
 <link rel="STYLESHEET" type="text/css" href="https://isaimini.moviesdamob.com/styles.css" media="all,handheld"/>
   <style>
+.informations {
+    padding: 10px 5px;
+   background-color: #FDF7FF;
+}
+
+.informations h1 {
+color:#ea1e4e;
+font-size: 16px;
+}
+
+.informations p1 {
+color: #4B4453;
+}
     .tron {
    -webkit-border-radius: 0;
    -moz-border-radius: 0;
@@ -34,14 +47,21 @@
     </style>
 </head>
   <body>
-    <div class="line"><span>Isaimini.Com</span><br/><small>Name Of Quality</small></div>
+    <div class="line"><span>{{site.name}}</span><br/><small>Name Of Quality</small></div>
+    <div class="informations">
+
+<h1>{{page.title}}</h1>
+
+</div>
     <iframe src="{{site.videoembed}}{{page.streamcode}}" style="border:0px #ffffff none;" name="myiFrame" scrolling="no" frameborder="0" marginheight="0px" marginwidth="0px" height="300px" width="100%" allowfullscreen>
     </iframe>
     <div class="line"><b>Screenshots</b></div>
 <img style = "width: 100%; height: 60%; " src="https://akamai-img-content.com/{{page.streamcode}}_xt.jpg"  alt=""  /> 
-        <div class="line"><b>Download This File</b></div>
+        <div class="line"><b>Download this Video</b></div>
     <center>
-    <a href="{{site.videodownload}}{{page.streamcode}}" class="tron"></a>
+    <a href="{{site.videodownload}}{{page.streamcode}}" class="tron">Download File</a>
        </center>
+    <div class="line"> © {{site.name}}<br>All Right
+Reserved</div>
     </body>
 </html>
