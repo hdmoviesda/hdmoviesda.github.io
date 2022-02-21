@@ -1,5 +1,5 @@
 ---
 layout: category
 title: Tamil Cartoons
-slug: tamil-cartoons
+slug: Tamil Cartoons
 ---
