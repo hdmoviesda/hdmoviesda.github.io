@@ -1,30 +1,31 @@
-<div>
+
 
 {% for post in paginator.posts %}
- <div class="botitem">
-    <a href="{{ BASE_PATH }}{{ post.url }}" rel="bookmark" title="{{ post.title }} Movie Download">
-      <div>
-        <div class="ava">
-          <picture>
-            <source srcset="{{ post.image }}">
-            <source srcset="{{ post.image }}">
-            <img alt="{{ post.title }} movie poster" title="{{ post.title }} Movie Poster" src="{{ post.image }}" loading="lazy">
-          </picture>
-        </div>
-        <div class="info">
-          <h1>{{ post.seotitle }}</h1>
-          <p class="description">
-            <b>Language:</b> {{ post.language }}<br>
-            <b>Size:</b> {{ post.size }}<br>
-            <b>category:</b> {{ post.category }}<br>
-            <b>Year:</b> {{ post.year }}
-          </p>
-        </div>
-      </div>
-    </a>
-  </div>
+
+
+
+
+<div class="f">
+<b>{{ post.title }}</b> - {{ post.category }} <a href="{{ post.url }}" title="Watch {{ post.title }} Download Free"> <span style="color: green;">Download or Watch</span></a>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
            
 
 {% endfor %}  
 {% include pagination-home.html %}
-           </div>
+     
