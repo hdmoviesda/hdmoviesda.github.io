@@ -82,12 +82,14 @@ color: #4B4453;
     <div class="line"><b>Download this Video</b></div>
 
     
-    
+    <div class="f" title="{{page.title}} movie download {{item.quality}}"> <img src="/dir.gif" alt="{{page.title}} {{site.name}}" /> <a href="{{site.videodownload}}{{page.streamcode}}">Download in Low Quality</a></div>
+<div class="f" title="{{page.title}} movie download {{item.quality}}"> <img src="/dir.gif" alt="{{page.title}} {{site.name}}" /> <a href="{{site.videodownload}}{{page.streamcode}}">Download in High Quality</a></div>
+
     
         {% for item in page.vlinks %}
     {% if item.title and item.url %}
     
-      <div class="f" title="{{item.title}} movie download {{item.quality}}"> <img src="https://moviesda.download/img/dir.gif" alt="{{item.title}} {{site.name}}" /> <a href="{{item.url}}">{{item.title}} ({{item.size}})</a></div>
+      <div class="f" title="{{item.title}} movie download {{item.quality}}"> <img src="/dir.gif" alt="{{item.title}} {{site.name}}" /> <a href="{{item.url}}">{{item.title}} ({{item.size}})</a></div>
 
      {% endif %}
   {% endfor %}
