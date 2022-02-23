@@ -25,6 +25,8 @@ xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
 <video:duration>7200</video:duration>
 <video:requires_subscription>yes</video:requires_subscription>
 <video:uploader info="{{ site.url }}">{{ site.name }}</video:uploader>
+<video:family_friendly>yes</video:family_friendly>
+<video:player_loc allow_embed="yes" autoplay="ap=1">{{ post.url | prepend: site.baseurl | prepend: site.url }}</video:player_loc>
 <video:live>no</video:live>
 </video:video>
         <changefreq>hourly</changefreq>
