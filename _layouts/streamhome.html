@@ -30,12 +30,12 @@
     {% for category in categories_list %}
                
                
-          <div itemprop="name" class="f" title="{{ category | camelcase }}"> <img src="/dir.gif" alt="{{ category | camelcase }}"> <a itemprop="url" href="{{ category | downcase | downcase | url_escape | strip | replace: ' ', '-' }}">{{ category | camelcase }}</a></div>     
+          <div itemprop="name" class="f" title="{{ category | camelcase }}"> <img src="/dir.gif" alt="{{ category | camelcase }}"> <a itemprop="url" href="{{site.url}}/category/{{ category | downcase | downcase | url_escape | strip | replace: ' ', '-' }}">{{ category | camelcase }}</a></div>     
                      
     {% endfor %}
   {% else %}
     {% for category in categories_list %}
-          <div itemprop="name" class="f" title="{{ category | camelcase }}"> <img src="/dir.gif" alt="{{ category | camelcase }}"> <a itemprop="url" href="{{ category | downcase | downcase | url_escape | strip | replace: ' ', '-' }}">{{ category | camelcase }}</a></div>     
+          <div itemprop="name" class="f" title="{{ category | camelcase }}"> <img src="/dir.gif" alt="{{ category | camelcase }}"> <a itemprop="url" href="{{site.url}}/category/{{ category | downcase | downcase | url_escape | strip | replace: ' ', '-' }}">{{ category | camelcase }}</a></div>     
     {% endfor %}
   {% endif %}
 {% assign categories_list = nil %}
