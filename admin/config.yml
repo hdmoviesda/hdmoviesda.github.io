@@ -215,11 +215,8 @@ collections:
         widget: "list"
       - label: "Author"
         name: "author"
-        widget: "relation"
-        collection: "authors"
-        displayFields: [display_name]
-        searchFields: [display_name]
-        valueField: "name"
+        widget: "hidden"
+        default: "Admin"
       - label: "Paginate"
         name: "paginate"
         widget: "boolean"
