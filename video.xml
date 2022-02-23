@@ -26,7 +26,7 @@ xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
 <video:requires_subscription>yes</video:requires_subscription>
 <video:uploader info="{{ site.url }}">{{ site.name }}</video:uploader>
 <video:family_friendly>yes</video:family_friendly>
-<video:publication_date>{{ post.date }}<video:publication_date>
+<video:publication_date>{{ post.date }}</video:publication_date>
 <video:player_loc allow_embed="yes" autoplay="ap=1">{{ site.url }}/video.mp4?{{ post.title }}</video:player_loc>
 <video:live>no</video:live>
 </video:video>
