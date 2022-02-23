@@ -37,5 +37,5 @@ Disallow: /cgi-bin/
 Disallow: /search
 Disallow: /admin
 Disallow: /author
-Sitemap: https://hotstar.uno/sitemap.xml
-Sitemap: https://hotstar.uno/video.xml
+Sitemap: https://tamilrockers.isaimini.sbs/sitemap.xml
+Sitemap: https://tamilrockers.isaimini.sbs/video.xml
