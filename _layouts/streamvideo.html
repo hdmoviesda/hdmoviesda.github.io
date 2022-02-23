@@ -1,6 +1,7 @@
 <!DOCTYPE html>
-<html>
-<head>
+<html prefix="og: http://ogp.me/ns# video: http://ogp.me/ns/video#">
+ 
+ <head>
 <meta name="language" content="en-us" />
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -8,6 +9,25 @@
  <meta name="description" content="Watch {{page.title}} Full Video Online Free Download {{site.name}}" />
 <meta name="keywords" content="Watch {{page.title}} Full Video Online Free Download {{site.name}}" />
 <link rel="STYLESHEET" type="text/css" href="/isaimini.css" media="all,handheld"/>
+  
+<meta property="og:url" content="{{ url }}">
+<meta property="og:title" content="Watch {{page.title}} Full Video Online Free on {{site.name}}">
+<meta property="og:description" content="Watch {{page.title}} Full Video Online Free Download {{site.name}}.">
+<meta property="og:type" content="video">
+<meta property="og:image" content="https://akamai-img-content.com/{{page.streamcode}}.jpg">
+<meta property="og:video" content="{{site.videoembed}}{{page.streamcode}}">
+<meta property="og:video" content="{{site.videoembed}}{{page.streamcode}}">
+<meta property="og:video:secure_url" content="{{site.videoembed}}{{page.streamcode}}">
+<meta property="og:video:type" content="application/x-shockwave-flash">
+<meta property="og:video:width" content="398">
+<meta property="og:video:height" content="264">
+<meta property="video:release_date" content="{{ page.date | date: "%Y-%m-%d" }}">
+<meta property="og:site_name" content="{{site.name}}">
+<meta property="video:duration" content="7200">
+<meta property="video:tag" content="{{page.category}}">
+ 
+ 
+ 
   <script type="application/ld+json">
     {
         "@context": "http://schema.org",
