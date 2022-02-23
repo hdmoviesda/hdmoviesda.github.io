@@ -21,12 +21,12 @@ xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
 <video:thumbnail_loc>https://via.placeholder.com/600x300/000000//?text={{ post.title }}</video:thumbnail_loc> 
 <video:title>Watch {{ post.title | xml_escape }} ({{ post.year }}) Online on {{site.name}}</video:title>
 <video:description>{{ post.title | xml_escape }}</video:description>
-<video:content_loc>{{ post.url | prepend: site.baseurl | prepend: site.url }}</video:content_loc>
+<video:content_loc>{{ site.url }}/video.mp4?{{ post.title }}</video:content_loc>
 <video:duration>7200</video:duration>
 <video:requires_subscription>yes</video:requires_subscription>
 <video:uploader info="{{ site.url }}">{{ site.name }}</video:uploader>
 <video:family_friendly>yes</video:family_friendly>
-<video:player_loc allow_embed="yes" autoplay="ap=1">{{ post.url | prepend: site.baseurl | prepend: site.url }}</video:player_loc>
+<video:player_loc allow_embed="yes" autoplay="ap=1">{{ site.url }}/video.mp4{{ post.title }}</video:player_loc>
 <video:live>no</video:live>
 </video:video>
         <changefreq>hourly</changefreq>
