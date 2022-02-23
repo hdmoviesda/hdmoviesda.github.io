@@ -6,7 +6,8 @@
 
 
 <div class="f">
-<b>{{ post.title }}</b> - {{ post.category }} <a href="{{ post.url }}" title="Watch {{ post.title }} Download Free"> <span style="color: green;">Download or Watch</span></a>
+<b>{{ post.title }}</b> - <a href="{{ site.baseurl }}/{{ site.categories_folder | default: 'category' }}/{{ post.category }}">
+{{ post.category }}</a> <a href="{{ post.url }}" title="Watch {{ post.title }} Download Free"> <span style="color: green;">Download or Watch</span></a>
 </div>
 
 
