@@ -9,15 +9,16 @@
  <meta name="description" content="Watch {{page.title}} Full Video Online Free Download {{site.name}}" />
 <meta name="keywords" content="Watch {{page.title}} Full Video Online Free Download {{site.name}}" />
 <link rel="STYLESHEET" type="text/css" href="/isaimini.css" media="all,handheld"/>
-  
+<link rel="stylesheet" href="https://cdn.azk1.net/player/plyr/plyr.css" />
+
 <meta property="og:url" content="{{ url }}">
 <meta property="og:title" content="Watch {{page.title}} Full Video Online Free on {{site.name}}">
 <meta property="og:description" content="Watch {{page.title}} Full Video Online Free Download {{site.name}}.">
 <meta property="og:type" content="video">
-<meta property="og:image" content="https://akamai-img-content.com/{{page.streamcode}}.jpg">
-<meta property="og:video" content="{{site.videoembed}}{{page.streamcode}}">
-<meta property="og:video" content="{{site.videoembed}}{{page.streamcode}}">
-<meta property="og:video:secure_url" content="{{site.videoembed}}{{page.streamcode}}">
+<meta property="og:image" content="https://via.placeholder.com/600x300/000000//?text={{page.title}}">
+<meta property="og:video" content="{{page.streamcode}}">
+<meta property="og:video" content="{{page.streamcode}}">
+<meta property="og:video:secure_url" content="{{page.streamcode}}">
 <meta property="og:video:type" content="application/x-shockwave-flash">
 <meta property="og:video:width" content="398">
 <meta property="og:video:height" content="264">
@@ -37,7 +38,8 @@
         "thumbnailUrl": ["https://akamai-img-content.com/{{page.streamcode}}.jpg"],
         "uploadDate": "{{page.date}}",
         "duration": "PT2H",
-        "embedUrl": "{{site.videoembed}}{{page.streamcode}}",
+        "contentUrl": "{{page.streamcode}}",
+        "embedUrl": "{{page.streamcode}}",
         "publication": {
             "@type": "BroadcastEvent",
             "isLiveBroadcast": false,
@@ -92,27 +94,41 @@ color: #4B4453;
 <h1>{{page.title}}</h1>
 
 </div>
-    <iframe src="{{site.videoembed}}{{page.streamcode}}" style="border:0px #ffffff none;" name="myiFrame" scrolling="no" frameborder="0" marginheight="0px" marginwidth="0px" height="300px" width="100%" allowfullscreen>
-    </iframe>
+   
+  <video autoplay id="player" style="height: 300px" width:"100%">
+<source src="{{page.streamcode}}" type="video/mp4" />
+</video> 
+   
+   
+   
+   
         <center>
-    <a href="{{site.videodownload}}{{page.streamcode}}" class="tron">Download File</a>
+    <a href="{{page.streamcode}}" class="tron">Download File</a>
        </center>
  
    
     <div class="line"><b>Download this Video</b></div>
 
     
-      <div class="f" title="{{page.title}} movie download {{item.quality}}"> <img src="/dir.gif" alt="{{page.title}} {{site.name}}" /> <a href="{{site.videodownload}}{{page.streamcode}}">Download in Low Quality</a></div>
-<div class="f" title="{{page.title}} movie download {{item.quality}}"> <img src="/dir.gif" alt="{{page.title}} {{site.name}}" /> <a href="{{site.videodownload}}{{page.streamcode}}">Download in High Quality</a></div>    
+      <div class="f" title="{{page.title}} movie download"> <img src="/dir.gif" alt="{{page.title}} {{site.name}}" /> <a href="{{page.streamcode}}">Download in Low Quality</a></div>
+<div class="f" title="{{page.title}} movie download"> <img src="/dir.gif" alt="{{page.title}} {{site.name}}" /> <a href="{{page.streamcode}}">Download in High Quality</a></div>    
 {% for item in page.vlinks %}
    {% if item.title and item.url %}
     
-      <div class="f" title="{{item.title}} movie download {{item.quality}}"> <img src="/dir.gif" alt="{{item.title}} {{site.name}}" /> <a href="{{item.url}}">{{item.title}} ({{item.size}})</a></div>
+      <div class="f" title="{{item.title}} movie download"> <img src="/dir.gif" alt="{{item.title}} {{site.name}}" /> <a href="{{item.url}}">{{item.title}} ({{item.size}})</a></div>
 
      {% endif %}
   {% endfor %}
       
        {% include streamfooter.html %}
-
+<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+<script src="https://cdn.azk1.net/player/plyr/autosize.min.js"></script>
+<script src="https://cdn.azk1.net/player/plyr/script.js"></script>
+<script src="https://cdn.azk1.net/player/plyr/plyr.js"></script>
+<script>
+    var player = new Plyr('#player', {
+        settings: ""
+    });
+</script>
     </body>
 </html>
