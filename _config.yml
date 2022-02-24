@@ -78,6 +78,10 @@ videodownload: "https://viewsb.com/d/"
 videoserver: "https://viewsb.com/"
 videothumb: "https://akamai-img-content.com/"
 
+# Video Iframe Settings
+driveembed: "https://drive.tamildev.com/e/"
+drivedownload: "https://drive.tamildev.com/d/"
+
 # Advanced Settings
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://tamilrockers.moviesda.download" # the base hostname & protocol for your site
