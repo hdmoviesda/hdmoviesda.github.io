@@ -96,10 +96,9 @@ color: #4B4453;
    <script src="https://cdn.fluidplayer.com/v3/current/fluidplayer.min.js"></script>
 
   <video autoplay id="video-id" style="height: 300px" width:"100%">
-   <script>(function(s,u,z,p){s.src=u,s.setAttribute('data-zone',z),p.appendChild(s);})(document.createElement('script'),'https://iclickcdn.com/tag.min.js',4891775,document.body||document.documentElement)</script>
 <source src="{{page.streamcode}}" type="video/mp4" />
 </video> 
-   <script>
+  <script>
     var myFP = fluidPlayer(
         'video-id',	{
 	"layoutControls": {
@@ -109,13 +108,13 @@ color: #4B4453;
 			"autoHide": true
 		},
 		"htmlOnPauseBlock": {
-			"html": "Uploaded by Tamilrockers",
+			"html": null,
 			"height": null,
 			"width": null
 		},
 		"autoPlay": true,
 		"mute": false,
-		"allowTheatre": true,
+		"allowTheatre": false,
 		"playPauseAnimation": true,
 		"playbackRateEnabled": true,
 		"allowDownload": true,
@@ -135,6 +134,7 @@ color: #4B4453;
 		"adCTATextPosition": ""
 	}
 });
+</script>
    
    
    
