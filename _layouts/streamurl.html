@@ -139,15 +139,15 @@ color: #4B4453;
    
    
         <center>
-    <a href="{{page.streamcode}}" onclick=" window.open('{{page.streamcode}}','_blank')" class="tron">Download File</a>
+    <a href="{{page.streamcode}}" class="tron">Download File</a>
        </center>
  
    
     <div class="line"><b>Download this Video</b></div>
 
     
-      <div class="f" title="{{page.title}} movie download"> <img src="/dir.gif" alt="{{page.title}} {{site.name}}" /> <div onclick=" window.open('{{page.streamcode}}','_blank')">Download in Low Quality</div></div>
-<div class="f" title="{{page.title}} movie download"> <img src="/dir.gif" alt="{{page.title}} {{site.name}}" /> <div onclick=" window.open('{{page.streamcode}}','_blank')">Download in High Quality</div></div>    
+      <div class="f" title="{{page.title}} movie download"> <img src="/dir.gif" alt="{{page.title}} {{site.name}}" /> <a href="{{page.streamcode}}">Download in Low Quality</div></div>
+<div class="f" title="{{page.title}} movie download"> <img src="/dir.gif" alt="{{page.title}} {{site.name}}" /> <a href="{{page.streamcode}}">Download in High Quality</div></div>    
 {% for item in page.vlinks %}
    {% if item.title and item.url %}
     
