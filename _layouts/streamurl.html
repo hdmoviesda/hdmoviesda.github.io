@@ -93,46 +93,52 @@ color: #4B4453;
 <h1>{{page.title}}</h1>
 
 </div>
-   <script src="https://cdn.fluidplayer.com/v3/current/fluidplayer.min.js"></script>
 
-  <video autoplay id="video-id" style="height: 300px" width:"100%">
-<source src="{{page.streamcode}}" type="video/mp4" />
-</video> 
-  <script>
-    var myFP = fluidPlayer(
-        'video-id',	{
-	"layoutControls": {
-		"controlBar": {
-			"autoHideTimeout": 3,
-			"animated": true,
-			"autoHide": true
-		},
-		"htmlOnPauseBlock": {
-			"html": null,
-			"height": null,
-			"width": null
-		},
-		"autoPlay": true,
-		"mute": false,
-		"allowTheatre": false,
-		"playPauseAnimation": true,
-		"playbackRateEnabled": true,
-		"allowDownload": true,
-		"playButtonShowing": true,
-		"fillToContainer": true,
-		"posterImage": ""
-	},
-	"vastOptions": {
-		"adList": [
-			{
-				"roll": "preRoll",
-				"vastTag": "https://www.videosprofitnetwork.com/watch.xml?key=528f544b6648e037a08fa50b6e717afd",
-				"adText": ""
-			}
-		],
-		"adCTAText": false,
-		"adCTATextPosition": ""
-	}
+  <div id="player" style="text-align: center;">
+</div>
+  <script type="text/javascript">
+var player = jwplayer("player");
+player.setup({
+    sources: [{
+        "default": "true",
+        "type": "mp4",
+        "file": "{{page.streamcode}}"
+    }],
+    cast: {},
+    aspectratio: "16:9",
+    startparam: "start",
+    primary: "html5",
+    autostart: true,
+      width: "100%",
+    preload: "auto",
+    captions: {
+        color: "#FFFFFF",
+        fontSize: 11,
+        backgroundOpacity: 0,
+        fontfamily: "Helvetica",
+        edgeStyle: "raised"
+    },
+      "advertising": {
+    "client": "vast",
+    "adscheduleid": "Az87bY12",
+    "schedule": [
+      {
+        "tag": "https://www.videosprofitnetwork.com/watch.xml?key=528f544b6648e037a08fa50b6e717afd"
+      }
+    ]
+  },
+    tracks: [{
+        file: "",
+        label: "English",
+        kind: "captions",
+        "default": true
+    }]
+});
+player.on("setupError", function() {
+    swal("Server Error!", "Please contact us to fix it asap. Thank you!", "error")
+});
+player.on("error", function() {
+    swal("Server Error!", "Please contact us to fix it asap. Thank you!", "error")
 });
 </script>
    
@@ -158,14 +164,10 @@ color: #4B4453;
       
        {% include streamfooter.html %}
 <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-<script src="https://cdn.azk1.net/player/plyr/autosize.min.js"></script>
-<script src="https://cdn.azk1.net/player/plyr/script.js"></script>
-<script src="https://cdn.azk1.net/player/plyr/plyr.js"></script>
-<script>
-    var player = new Plyr('#player', {
-        settings: ""
-    });
-</script>
+
+<script type="text/javascript" src="https://ssl.p.jwpcdn.com/player/v/8.7.6/jwplayer.js"></script>
+<script type="text/javascript">jwplayer.key="64HPbvSQorQcd52B8XFuhMtEoitbvY/EXJmMBfKcXZQU2Rnn";</script>
+
 	       <script type="application/ld+json">
         {
             "@context": "http://schema.org",
