@@ -35,7 +35,7 @@ box-shadow: 0px 0px 10px #6699ff;}
 
 .aut a:hover{color:#d8eff8; border-bottom:1px dotted #b5def0; background:transparent}
 
-.Tag{padding: 3px; background-color: #eff3f6;}
+.Tag{overflow: hidden;padding: 3px; background-color: #eff3f6;}
 
 .form{margin: 1px; padding: 3px; background: url(/img/white.gif) repeat-x top; border: 1px solid #ececec; }
 
