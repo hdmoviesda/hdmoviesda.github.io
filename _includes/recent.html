@@ -6,52 +6,6 @@
 
 
 <div class="f">
- <script type="application/ld+json">
-        {
-            "@context": "http://schema.org",
-            "@type": "BlogPosting",
-            "name": "{{ post.title }}",
-            "headline": "{{ post.subtitle }}",
-            "description": "{{ post.description }}",
-            "image": "{{ post.image }}",
-            "url": "{{ post.url | prepend: site.baseurl | prepend: site.url }}",
-            "articleBody": "{{ content | strip_html | xml_escape | textilize }}",
-            "wordcount": "{{ content | number_of_words }}",
-            "inLanguage": "{{ site.language }}",
-            "dateCreated": "{{ post.date | date: '%Y-%m-%d/' }}",
-            "datePublished": "{{ post.date | date: '%Y-%m-%d/' }}",
-            "dateModified": "{{ post.date | date: '%Y-%m-%d/' }}",
-            "author": {
-                "@type": "Person",
-                "name": "{{ author.display_name }}",
-                {% if author.photo %}
-                "image": "{{ author.photo }}",
-                {% else %}
-                "image": "{{ "/assets/img/user.jpg" | prepend: site.baseurl | prepend: site.url }}",
-                {% endif %}
-                "jobTitle": "{{ author.position }}",
-                "url": "{{ author.url | prepend: site.baseurl | prepend: site.url }}",
-                "sameAs": [
-                    {{ author_urls | split: "," | join: "," }}
-                ]
-            },
-            "publisher": {
-                "@type": "Organization",
-                "name": "{{ site.name }}",
-                "url": "{{ site.url }}{{site.baseurl}}/",
-                "logo": {
-                    "@type": "ImageObject",
-                    "url": "{{ site.url }}{{site.baseurl}}/assets/img/blog-image.png",
-                    "width": "600",
-                    "height": "315"
-                }
-            },
-            "mainEntityOfPage": "True",
-            "genre": "{{ post.category }}",
-            "articleSection": "{{ post.category }}",
-            "keywords": [{{ post.tags | join: '","' | append: '"' | prepend: '"' }}]
-        }
-        </script>
 <b>{{ post.title }}</b> - {{ post.category }} <a href="{{ post.url }}" title="Watch {{ post.title }} Download Free"> <span style="color: green;">Download or Watch</span></a>
 </div>
 
