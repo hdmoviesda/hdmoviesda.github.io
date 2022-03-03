@@ -6,26 +6,8 @@
 
 
 <div class="f">
-<b>{{ post.title }}</b> - {{ post.category }} <a href="{{ post.url }}" title="Watch {{ post.title }} Download Free"> <span style="color: green;">Download or Watch</span></a>
+<a href="{{ post.url }}" title="{{ post.title }}"><b>{{ post.title }}</b> - <span style="color: green;">Read more</span></a>
 </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
- 
-           
-
 {% endfor %}  
 {% include pagination-home.html %}
      
