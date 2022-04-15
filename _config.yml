@@ -84,7 +84,7 @@ drivedownload: "https://drive.tamildev.com/d/"
 
 # Advanced Settings
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://tamilrockers.moviesda.download" # the base hostname & protocol for your site
+url: "https://hdmoviesda.github.io" # the base hostname & protocol for your site
 google_analytics: "UA-179466109-1"
 language: "en"
 categories_folder: category
