@@ -21,7 +21,43 @@ box-shadow: 0px 0px 10px #6699ff;}
 
 .line{background-color: #308bcf; color: #ffffff; background-image: url(/img/header.gif); font-weight: bold; padding: 10px 10px 10px 10px; text-align: center; text-decoration: none; margin-bottom: 0px;}
 
+.informations {
+    padding: 10px 5px;
+   background-color: #FDF7FF;
+}
 
+.informations h1 {
+color:#ea1e4e;
+font-size: 16px;
+}
+
+.informations p1 {
+color: #4B4453;
+}
+    .tron {
+   -webkit-border-radius: 0;
+   -moz-border-radius: 0;
+   border-radius: 0;
+   color: #FFFFFF;
+   font-family: Open Sans;
+   font-size: 18px;
+   font-weight: 100;
+   padding: 14px;
+   background-color: #000000;
+   text-decoration: none;
+   display: inline-block;
+   cursor: pointer;
+   text-align: center;
+}
+
+.tron:hover {
+   background: #000000;
+   border: solid #00E2FF 5px;
+   -webkit-border-radius: 0;
+   -moz-border-radius: 0;
+   border-radius: 0;
+   text-decoration: none;
+}
 .Adz {color: red; font-weight: bold; 
 }
 
