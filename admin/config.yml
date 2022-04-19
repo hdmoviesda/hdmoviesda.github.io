@@ -3,6 +3,48 @@ backend:
   branch: master
 media_folder: "assets/img/uploads"
 collections:
+  - label: "Torrent FIle"
+    name: "torrentd"
+    folder: "_posts"
+    create: true
+    slug: "{{hash}}"
+    preview_path: "{{title}}"
+    extension: "md"
+    fields:
+      - label: "Publish Date"
+        name: "date"
+        widget: "datetime"
+        format: "YYYY-MM-DD HH:mm:ss"
+      - label: "Layout"
+        name: "layout"
+        widget: "hidden"
+        default: "trmain"
+      - label: "Category"
+        name: "category"
+        widget: "relation"
+        default: "movie"
+        collection: "categories"
+        searchFields: ["title"]
+        valueField: "slug"
+        displayFields: ["title"]
+      - label: "Name"
+        name: "title"
+        widget: "string"
+      - label: "Torrent File Hash"
+        name: "hash"
+        widget: "string"
+      - label: "Download Link"
+        name: "dlinks"
+        widget: "list"
+        required: false
+        fields:
+              - label: "Title"
+                name: "title"
+                widget: "string"
+                default: "Download Server 1"
+              - label: "URL"
+                name: "url"
+                widget: "string"
   - label: "Videos"
     name: "videos"
     folder: "_posts"
