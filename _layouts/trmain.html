@@ -1,0 +1,72 @@
+{% include trhead.html %}
+  <div class="informations">
+
+<h1>{{page.title}}</h1>
+<ul style="list-style: none;margin-block-start: 0em;padding-inline-start: 5px;">
+<li><b>InfoHash:</b> {{page.hash}}</li>
+<li><b>Last Updated:</b> {{page.date}}</li>
+<li><b>File Category:</b> {{page.category}}</li>
+</ul>
+</div>
+
+
+<div style="text-align: center;">
+<a href=""><img src="/magurl.png" alt="Magnet URl" width="120" height="40"></a>
+<a href=""><img src="/torrent.png" alt="Download Torrent" width="120" height="40"></a>
+</div>
+
+ {% for item in page.dlinks %}
+<div class="line"><b>Download File</b></div>
+    {% if item.title and item.url %}
+      <div class="f" title="{{item.title}}"> <img src="/dir.gif" alt="{{item.title}} {{site.name}}" /> <a href="{{item.url}}">{{item.title}}</a></div>
+     {% endif %}
+  {% endfor %}
+
+
+<script type="application/ld+json">
+        {
+            "@context": "http://schema.org",
+            "@type": "BlogPosting",
+            "name": "{{ page.title }}",
+            "headline": "{{ page.subtitle }}",
+            "description": "{{ page.description }}",
+            "image": "{{ image }}",
+            "url": "{{ page.url | prepend: site.baseurl | prepend: site.url }}",
+            "articleBody": "{{ content | strip_html | xml_escape | textilize }}",
+            "wordcount": "{{ content | number_of_words }}",
+            "inLanguage": "{{ site.language }}",
+            "dateCreated": "{{ page.date | date: '%Y-%m-%d/' }}",
+            "datePublished": "{{ page.date | date: '%Y-%m-%d/' }}",
+            "dateModified": "{{ page.date | date: '%Y-%m-%d/' }}",
+            "author": {
+                "@type": "Person",
+                "name": "{{ author.display_name }}",
+                {% if author.photo %}
+                "image": "{{ author.photo }}",
+                {% else %}
+                "image": "{{ "/assets/img/user.jpg" | prepend: site.baseurl | prepend: site.url }}",
+                {% endif %}
+                "jobTitle": "{{ author.position }}",
+                "url": "{{ author.url | prepend: site.baseurl | prepend: site.url }}",
+                "sameAs": [
+                    {{ author_urls | split: "," | join: "," }}
+                ]
+            },
+            "publisher": {
+                "@type": "Organization",
+                "name": "{{ site.name }}",
+                "url": "{{ site.url }}{{site.baseurl}}/",
+                "logo": {
+                    "@type": "ImageObject",
+                    "url": "{{ site.url }}{{site.baseurl}}/assets/img/blog-image.png",
+                    "width": "600",
+                    "height": "315"
+                }
+            },
+            "mainEntityOfPage": "True",
+            "genre": "{{ page.category }}",
+            "articleSection": "{{ page.category }}",
+            "keywords": [{{ page.tags | join: '","' | append: '"' | prepend: '"' }}]
+        }
+        </script>
+{% include trfoot.html %}
